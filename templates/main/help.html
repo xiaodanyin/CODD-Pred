@@ -1,0 +1,83 @@
+{% extends 'basemain.html' %}
+
+
+
+{% block head %}
+    <title>Help</title>
+{% endblock %}
+
+
+
+{% block nav_menu %}
+    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+
+    <!-- <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="/works/submit" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Submit Select
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+            <a class="dropdown-item" href="/works/submit_strategy">Submit Strategy</a>
+      	</div>
+	</li> -->
+    <li class="nav-item"><a class="nav-link" href="/works/works_target_prob_submit">Target Prediction</a></li>
+	<li class="nav-item"><a class="nav-link" href="/works/submit_strategy">Bioactivity Prediction</a></li>
+    <li class="nav-item"><a class="nav-link" href="/help">Help</a></li>
+<li class="nav-item"><a class="nav-link" href="/contact"> Contact</a></li>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+    <!-- Nav -->
+    <h1 class="mt-4 mb-3">Help</h1>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">GoPredictor</a>
+        </li>
+        <li class="breadcrumb-item active">Help</li>
+    </ol>
+
+
+
+    <!-- Content -->
+    <div id="card-home">
+
+        <div class="card">
+            <div class="card-header">
+                 <a class="card-link collapsed" data-toggle="collapse" data-parent="#card-home" href="#card-element-1">
+                     1. How to use GoPredictor?
+                 </a>
+            </div>
+            <div id="card-element-1"  class="collapse show">
+                <div class="card-body">
+                    （占位）
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                 <a class="card-link collapsed" data-toggle="collapse" data-parent="#card-home" href="#card-element-2">
+                     2. How to download the results?
+                 </a>
+            </div>
+            <div id="card-element-2" class="collapse show">
+                <div class="card-body">
+                    The results, despite displayed on the interface, could also be downloaded as a table. Once click the corresponding button, the results would be downloaded and saved as a csv file.
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+{% endblock %}
+
+
+
+{% block js %}
+
+{% endblock%}

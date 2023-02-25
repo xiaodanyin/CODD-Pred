@@ -1,0 +1,12 @@
+lib,version
+rdkit,2020.09.1
+flask,2.0.2
+pyg,2.0.2
+dgl,0.8.0
+dgllife,0.2.9
+pytorch,1.10.0
+torchvision,0.7.0
+scikit-learn,1.0.2
+xgboost,1.5.1
+chemprop,1.5.2
+

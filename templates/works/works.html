@@ -1,0 +1,98 @@
+{% extends 'basemain.html' %}
+
+
+
+{% block head %}
+    <title>Works</title>
+{% endblock %}
+
+
+
+{% block nav_menu %}
+    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+
+    <!-- <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="/works/submit" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Submit Select
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+            <a class="dropdown-item" href="/works/submit_strategy">Submit Strategy</a>
+      	</div>
+	</li> -->
+    <li class="nav-item"><a class="nav-link" href="/works/works_target_prob_submit">Target Prediction</a></li>
+	<li class="nav-item"><a class="nav-link" href="/works/submit_strategy">Bioactivity Prediction</a></li>
+    <li class="nav-item"><a class="nav-link" href="/help">Help</a></li>
+<li class="nav-item"><a class="nav-link" href="/contact"> Contact</a></li>
+{% endblock %}
+
+
+
+
+
+
+
+{% block content %}
+
+    <h1 class="mt-4 mb-3">Works
+          <small>Online servers</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">GoPredictor</a>
+        </li>
+        <li class="breadcrumb-item active">Works</li>
+    </ol>
+
+    <h3> Title </h3>
+    <p>
+        Some word CMMG, dklsjakl,Some word CMMG, dklsjakl,Some word CMMG, dklsjakl,Some word CMMG, dklsjakl,Some word CMMG, dklsjakl,Some word CMMG, dklsjakl,Some word CMMG, dklsjakl,Some word CMMG, dklsjakl,
+    </p>
+
+    <!-- Project DeepAmes -->
+    <div class="row">
+      <div class="col-md-7">
+        <a href="#">
+          <!-- <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt=""> -->
+
+          <div style="text-align:center;"><img style="width:100%;" class="img-fluid rounded mb-3 mb-md-0" src="{{ url_for('static', filename = 'img/workflow-deepames.jpg') }}" /></div>
+        </a>
+      </div>
+      <div class="col-md-5">
+        <h3>Project DeepAmes</h3>
+        <p>
+            DeepAmes is a cheminformatics web server that serves as a model for the prediction of Ames mutagenicity.
+                  The Ames test is a widely employed method that uses bacteria to test whether a given chemical can
+                  cause mutations in the DNA of the test organism. A positive test indicates that the chemical is
+                  mutagenic and therefore may act as a carcinogen, because cancer is often linked to mutation.
+        </p>
+        <a class="btn btn-primary" href="/works/submit/">View Project
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Project DeepCYP1A2 -->
+    <div class="row">
+      <div class="col-md-7">
+        <a href="#">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+        </a>
+      </div>
+      <div class="col-md-5">
+        <h3>Project DeepCYP1A2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+        <a class="btn btn-primary" href="#">View Project
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+
+{% endblock %}
+
+
+
+{% block js %}
+
+{% endblock%}

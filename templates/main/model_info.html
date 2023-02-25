@@ -1,0 +1,461 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+<title>Model Info</title>
+<style type="text/css"> 
+  .AutoNewline 
+  { 
+      word-break: break-all;/*必须*/ 
+      word-wrap:break-word;
+  } 
+  </style> 
+  
+{% endblock %}
+
+
+{% block content %}
+
+<header id="header" class="bg-gray py-1">
+  <div class="fs-6 my-0 text-center">Model Info</div>
+</header>
+
+            <section class="py-2">
+                <div class="container px-5 my-2">
+                    <div class="row gx-5">
+                        <div class="col-lg-3">
+                            <div class="sticky-top">
+                                <div class="list-group" id="list-tab" role="tablist">
+                                    <a class="list-group-item" href="#model-data">Model data</a> 
+                                    <a class="list-group-item" href="#model-framework">Model framework</a> 
+                                    <a class="list-group-item" href="#model-performance">Model performance</a> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <!-- Post content-->
+                            <article>
+                                <!-- Post header-->
+                                <header>
+                                    <!-- Post title-->
+                                    <h1 id="model-data" class="h5">1. Model data</h1>
+                                </header>
+                                <!-- Post content-->
+                                <section class="mb-4">
+                                    <h2 class="mb-4 mt-4 h5">1) Target prediction dataset</h2>
+                                    <p class="fs-6">
+                                        target prediction dataset consisting of 691268 small molecules interacting with 687 targets, for details of the dataset, <a href='/static/target_data/CODD_PRED_target_prediction_dataset.xlsx'>click here.</a>
+                                    </p>
+                                </section>
+                                <section class="mb-4">
+                                    <h2 class="mb-4 mt-4 h5">2) Bioactivity prediction dataset</h2>
+                                    <table class="table fs-7 table-striped text-center">
+                                        <thead class="thead-light">
+                                          <tr>
+                                            <th scope="col">Target</th>
+                                            <th scope="col">Training set</th>
+                                            <th scope="col">Valuation set</th>
+                                            <th scope="col">Test set</th>
+                                            <th scope="col">Total</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          {% for group_data in ret.grouped_bio_data %}
+                                            {% if group_data | length == 10 %}
+                                              <tr>
+                                                <td>{{group_data[0]}}</td>
+                                                <td>{{group_data[1]}}</td>
+                                                <td>{{group_data[2]}}</td>
+                                                <td>{{group_data[3]}}</td>
+                                                <td>{{group_data[4]}}</td>
+                                              </tr>
+                                              <tr>
+                                                <td>{{group_data[5]}}</td>
+                                                <td>{{group_data[6]}}</td>
+                                                <td>{{group_data[7]}}</td>
+                                                <td>{{group_data[8]}}</td>
+                                                <td>{{group_data[9]}}</td>
+                                              </tr>
+                                            {% else %}
+                                              <tr>
+                                                <td>{{group_data[0]}}</td>
+                                                <td>{{group_data[1]}}</td>
+                                                <td>{{group_data[2]}}</td>
+                                                <td>{{group_data[3]}}</td>
+                                                <td>{{group_data[4]}}</td>
+                                              </tr>
+                                            {% endif %}
+                                          {% endfor %}
+                                        </tbody>
+                                      </table>
+                                </section>
+                                <section  class="mb-4">
+                                    <h2 class="mb-4 mt-4 h5">3) ADMET prediction dataset</h2>
+                                    <table class="table fs-7 table-striped text-center">
+                                        <thead class="thead-light">
+                                          <tr>
+                                            <th scope="col">Endpoint</th>
+                                            <th scope="col">Training set</th>
+                                            <th scope="col">Valuation set</th>
+                                            <th scope="col">Test set</th>
+                                            <th scope="col">Total</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          {% for group_data in ret.grouped_admet_data %}
+                                            {% if group_data | length == 10 %}
+                                              <tr>
+                                                <td>{{group_data[0]}}</td>
+                                                <td>{{group_data[1]}}</td>
+                                                <td>{{group_data[2]}}</td>
+                                                <td>{{group_data[3]}}</td>
+                                                <td>{{group_data[4]}}</td>
+                                              </tr>
+                                              <tr>
+                                                <td>{{group_data[5]}}</td>
+                                                <td>{{group_data[6]}}</td>
+                                                <td>{{group_data[7]}}</td>
+                                                <td>{{group_data[8]}}</td>
+                                                <td>{{group_data[9]}}</td>
+                                              </tr>
+                                            {% else %}
+                                              <tr>
+                                                <td>{{group_data[0]}}</td>
+                                                <td>{{group_data[1]}}</td>
+                                                <td>{{group_data[2]}}</td>
+                                                <td>{{group_data[3]}}</td>
+                                                <td>{{group_data[4]}}</td>
+                                              </tr>
+                                            {% endif %}
+                                        {% endfor %}
+                                        </tbody>
+                                      </table>
+                                </section>
+                            </article>
+
+                            <!-- Post content-->
+                            <article>
+                                <!-- Post header-->
+                                <header>
+                                    <!-- Post title-->
+                                    <h1 id="model-framework" class="h5">2. Model framework</h1>
+                                </header>
+                                <!-- Post content-->
+                                <section class="mb-4">
+                                    <h2 class="mb-4 mt-4 h5">1) DMGP framework for target prediction</h2>
+                                    <p class="fs-6 mb-4 ">
+                                      To implement the target prediction function for small molecular compounds, we constructed a Double Molecular Graph Perception (DMGP) framework using TrimNet and DMPNN, which combines the predictive results of the two algorithms to rank the probable targets of the query molecule. Firstly, we designed a multi-task binary classification model using TrimNet to learn the effect of a compound on multiple targets (positive or negative ligand compound). TrimNet is a graph-based approach with few parameters and high prediction accuracy recently proposed by our research group, which adopts a novel triplet message mechanism to effectively learn molecular representations. When a molecule is input, the output form of TrimNet is a 687-dimensional 0~1 probability vector <img src="/static/img/vector_a.png" width="20" height="30" > corresponding to 687 targets, and each dimension vector represents the probability of the query molecule to become a positive molecule for the corresponding target. DMPNN model, as another branch of the DMGP framework, was used to estimate the high dimensional similarity of the query molecule to 687 target positive molecules. When a molecule is input, the output form of DMPNN is also a 687-dimensional 0~1 probability vector <img src="/static/img/vector_b.png"  width="20" height="30">, and the sum of each element in the vector <img src="/static/img/vector_b.png"  width="20" height="30"> is 1. Finally, by elementwise multiplication of vector <img src="/static/img/vector_a.png"  width="20" height="30"> and <img src="/static/img/vector_b.png"  width="20" height="30"> , we obtained a 687-dimensional 0~1 relevance score vector <img src="/static/img/vector_c.png"  width="20" height="30">, and the 687 elements in the vector <img src="/static/img/vector_c.png"  width="20" height="30">represent the final relevance scores of the query molecule to the 687 targets, respectively. When the relevance score corresponding to a target is greater, the target is more probably to be the target of the query molecule, and the workflow of DMGP framework is shown in Figure 1.
+                                    </p>
+                                    <img class="img-fluid rounded-3 my-2" src="/static/img/model-1.png" alt="..."/>
+                                    <p class="fs-6 mb-0 text-center"><strong>Figure 1.</strong> Workflow of DMGP framework for target prediction</p>
+                                </section>
+                                <section class="mb-4">
+                                    <h2 class="mb-4 mt-4 h5">2) MSAP framework for bioactivity prediction</h2>
+                                    <p class="fs-6 mb-4 ">
+                                      To implement the bioactivity prediction function for small molecular compounds, we developed a Multi-model Self-validation Activity Prediction (MSAP) framework consisting of 7 ML regression models, including 4 graph-based deep learning models, Message Passing Neural Network (MPNN), Directed Message Passing Neural Network (DMPNN), Graph Attention Network (GAT), Graph Isomorphism Network (GIN) and 3 traditional ML models based on molecular fingerprinting, namely Support Vector Machine (SVM), Random Forest (RF), and eXtreme Gradient Boosting (XGBoost). We randomly divided the structure-activity dataset of small-molecule inhibitors of each target into training, validation and testing sets in the ratio of 8:1:1 by stratified sampling of the activity data, and trained, validated and tested the MSAP framework. For each query molecule, after selecting a target of interest, we provide it with two prediction modes, namely Best-mode and Merge-mode. Based on the performance of MSAP framework on the test set, the Best-mode is to select the best performing model to predict the pIC<sub>50</sub> value of the query molecule, while the Merge-mode selects several models in the framework whose performance meets the established criteria to predict the pIC<sub>50</sub> value of query molecule at the same time. And after excluding abnormal predicted values, take the average of the predicted values of multiple models as the final predicted pIC<sub>50</sub> value of the query molecule in Merge-mode. The workflow of small molecules bioactivity prediction is shown in Figure 2.
+                                    </p>
+                                    <img class="img-fluid rounded-3 my-2" src="/static/img/model-2.png" alt="..."/>
+                                    <p class="fs-6 mb-0 text-center"><strong>Figure 2.</strong> Workflow of bioactivity prediction</p>
+
+                                </section>
+                                <section class="mb-4">
+                                    <h2 class="mb-4 mt-4 h5">3) Model for ADMET prediction</h2>
+                                    <p class="fs-6 mb-4">
+                                      For ADME-related endpoints, many open-source reliable and high-performing computational methods have been developed. Among them, Therapeutics Data Commons (TDC) developed by Huang et al. integrates several machine learning datasets and tasks related to drug development, contributing to accelerating the development, validation, and transition of machine learning models to clinical implementation. In order to achieve accurate and fast prediction of ADME-related properties of compounds, we used the molecular characterization approach in TDC and suitable machine learning models to model the ADME-related datasets and obtained models with good predictive performance. The models used on the ADME-related datasets and the validation methods are shown in Table 1. In addition, since our previously developed TrimNet has comparable performance with state-of-the-art models for toxicity prediction, we used TrimNet for modeling the toxicity-related dataset.
+                                    </p>
+                                    <p class="fs-6 mb-4 text-center">
+                                      <strong>Table 1.</strong> Information about the model used for the ADMET endpoint dataset
+                                    </p>
+                                    <table class="table fs-7 table-striped text-center">
+                                        <thead class="thead-light">
+                                          <tr>
+                                            <th scope="col">Dataset</th>
+                                            <th scope="col">Model</th>
+                                            <th scope="col" width="160px">Validation</th>
+                                            <th scope="col" width="200px">Reference</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>Log D7.4</td>
+                                            <td>ContextPred</td>
+                                            <td rowspan="13" class="AutoNewline"><font size=2>5-fold cv.</font></td>
+                                            <td rowspan="13" class="AutoNewline"><font size=2>ArXiv preprint arXiv:2102.09548, 2021.</font></td>
+                                          </tr>
+                                          <tr>
+                                            <td>Log S</td>
+                                            <td>AttentiveFP</td>
+                                          </tr>
+                                          <tr>
+                                            <td>HIA</td>
+                                            <td>AttrMasking</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Pgp inhibitor</td>
+                                            <td>AttrMasking</td>
+                                          </tr>
+                                          <tr>
+                                            <td>BBB Penetration</td>
+                                            <td>ContextPred</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CYP2C9 inhibitor</td>
+                                            <td>ContextPred</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CYP2D6 inhibitor</td>
+                                            <td>ContextPred</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CYP3A4 inhibitor</td>
+                                            <td>ContextPred</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CYP2C19 inhibitor</td>
+                                            <td>ContextPred</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CYP1A2 inhibitor</td>
+                                            <td>ContextPred</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CYP2D6 substrate</td>
+                                            <td>ContextPred</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CYP3A4 substrate</td>
+                                            <td>CNN</td>
+                                          </tr>
+                                          <tr>
+                                            <td>T<sub>1/2</sub></td>
+                                            <td>AttrMasking</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Tox21</td>
+                                            <td>TrimNet</td>
+                                            <td><font size=2 class="AutoNewline">Train/validation early stopping</font></td>
+                                            <td><font size=2 class="AutoNewline">Briefings in Bioinformatics, 2021, 22(4): bbaa266.</font></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </section>
+                            </article>
+
+                            <!-- Post content-->
+                            <article>
+                                <!-- Post header-->
+                                <header class="mb-4">
+                                    <!-- Post title-->
+                                    <h1 id="model-performance" class="mb-1 h5">3. Model performance</h1>
+                                </header>
+                                <!-- Post content-->
+                                <section class="mb-4">
+                                    <h2 class="mb-4 mt-4 h5">1) Model performance of target prediction</h2>
+                                    <p class="fs-6 mb-4 text-center">
+                                      <strong>Table 2.</strong> Performance of DMGP framework on the external validation dataset
+                                    </p>
+                                    <table id="table2" class="table fs-7 table-striped text-center">
+                                        <thead class="thead-light">
+                                          <tr>
+                                            <th scope="col" rowspan="2" style="vertical-align:middle">Hit target number</th>
+                                            <th scope="col" colspan="4">top-K accuracy (%), K=
+                                            </th>
+                                          </tr>
+                                          <tr>
+                                            <!-- <th scope="col">Hit target number</th> -->
+                                            <th scope="col">1</th>
+                                            <th scope="col">5</th>
+                                            <th scope="col">10</th>
+                                            <th scope="col">15</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="gg">1</td>
+                                            <td>55.8</td>
+                                            <td>84.1</td>
+                                            <td>90.7</td>
+                                            <td>93</td>
+                                          </tr>
+                                          <tr>
+                                            <td>2</td>
+                                            <td>-</td>
+                                            <td>67.9</td>
+                                            <td>77.4</td>
+                                            <td>81.7</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </section>
+                                <section class="mb-4">
+                                    <h2 class="mb-4 mt-4 h5">2) Model performance of Bioactivity Prediction                                    </h2>
+                                    <p class="fs-6 mb-4 text-center">
+                                      <strong>Table 3.</strong> MAE of MSAP framework on structure-activity datasets of small-molecule inhibitors of 56 disease-related targets
+                                    </p>
+                                    <table id="table3" class="table fs-7 table-striped text-center">
+                                        <thead class="thead-light">
+                                          <tr>
+                                            <th scope="col" rowspan="2" style="vertical-align:middle">Target</th>
+                                            <th scope="col" colspan="5">Model</th>
+                                          </tr>
+                                          <tr>
+                                            <!-- <th scope="col">Hit target number</th> -->
+                                            <th scope="col">RF</th>			
+                                            <th scope="col">SVM</th>
+                                            <th scope="col">XGBoost</th>
+                                            <th scope="col">DMPNN</th>
+                                            <th scope="col">MPNN</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          {% for group_data in ret.grouped_model_performance_data %}
+                                          {% if group_data | length == 12 %}
+                                            <tr>
+                                              <td>{{group_data[0]}}</td>
+                                              <td>{{group_data[1]}}</td>
+                                              <td>{{group_data[2]}}</td>
+                                              <td>{{group_data[3]}}</td>
+                                              <td>{{group_data[4]}}</td>
+                                              <td>{{group_data[5]}}</td>
+                                            </tr>
+                                            <tr>
+
+                                              <td>{{group_data[6]}}</td>
+                                              <td>{{group_data[7]}}</td>
+                                              <td>{{group_data[8]}}</td>
+                                              <td>{{group_data[9]}}</td>
+                                              <td>{{group_data[10]}}</td>
+                                              <td>{{group_data[11]}}</td>
+                                            </tr>
+                                          {% else %}
+                                            <tr>
+                                              <td>{{group_data[0]}}</td>
+                                              <td>{{group_data[1]}}</td>
+                                              <td>{{group_data[2]}}</td>
+                                              <td>{{group_data[3]}}</td>
+                                              <td>{{group_data[4]}}</td>
+                                              <td>{{group_data[5]}}</td>
+                                            </tr>
+                                          {% endif %}
+                                      {% endfor %}
+                                          <!-- <tr>
+                                            <td>AKT2</td><td>0.325</td><td>0.353</td><td>0.378</td><td>0.355</td><td>0.457</td>
+                                          </tr>
+                                          <tr>
+                                            <td>AKT3</td><td>0.158</td><td>0.185</td><td>0.196</td><td>0.176</td><td>0.386</td>
+                                          </tr>
+                                          <tr>
+                                            <td>ALK </td><td>0.282</td><td>0.309</td><td>0.337</td><td>0.326</td><td>0.361</td>
+                                          </tr>
+                                          <tr>
+                                            <td>ACE</td><td>0.699</td><td>-</td><td>0.74</td><td>0.831</td><td>-</td>
+                                          </tr>
+                                          <tr>
+                                            <td>AURKA</td><td>0.339</td><td>0.389</td><td>0.395</td><td>0.406</td><td>0.424</td> 
+                                          </tr> -->
+                                        </tbody>
+                                      </table>
+
+                                </section>
+                                <section class="mb-4">
+                                    <h2 class="mb-4 mt-4 h5">3) Model performance of ADMET prediction</h2>
+                                    <p class="fs-6 mb-4 text-center">
+                                      <strong>Table 4.</strong> Performance of ADMET prediction models
+                                    </p>
+                                    <table id="table4" class="table fs-7 table-striped text-center">
+                                        <thead class="thead-light">
+                                          <tr>
+                                            <th scope="col">Property</th>
+                                            <th scope="col">Task type</th>
+                                            <th scope="col">AUROC</th>
+                                            <th scope="col">ACC</th>
+                                            <th scope="col">SE</th>
+                                            <th scope="col">SP</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>HIA</td><td>classification</td><td>0.976</td><td>0.945</td><td>0.96</td><td>0.896</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Pgp inhibitor</td><td>classification</td><td>0.929</td><td>0.846</td><td>0.893</td><td>0.797</td>
+                                                </tr>
+                                                <tr>
+                                                <td>BBB Penetration</td><td>classification</td><td>0.897</td><td>0.871</td><td>0.927</td><td>0.631</td>
+                                                </tr>
+                                                <tr>
+                                                <td>CYP1A2 inhibitor</td><td>classification</td><td>0.948</td><td>0.878</td><td>0.861</td><td>0.893</td>
+                                                </tr>
+                                                <tr>
+                                                <td>CYP2C9 inhibitor</td><td>classification</td><td>0.919</td><td>0.852</td><td>0.792</td><td>0.88</td>
+                                                </tr>
+                                                <tr>
+                                                <td>CYP2C19 inhibitor</td><td>classification</td><td>0.932</td><td>0.86</td><td>0.884</td><td>0.84</td>
+                                                </tr>
+                                                <tr>
+                                                <td>CYP2D6 inhibitor</td><td>classification</td><td>0.907</td><td>0.895</td><td>0.635</td><td>0.948</td>
+                                                </tr>
+                                                <tr>
+                                                <td>CYP2D6 substrate</td><td>classification</td><td>0.848</td><td>0.787</td><td>0.684</td><td>0.835</td>
+                                                </tr>
+                                                <tr>
+                                                <td>CYP3A4 inhibitor</td><td>classification</td><td>0.921</td><td>0.834</td><td>0.85</td><td>0.822</td>
+                                                </tr>
+                                                <tr>
+                                                <td>CYP3A4 substrate</td><td>classification</td><td>0.641</td><td>0.567</td><td>0.509</td><td>0.65</td>
+                                                </tr>
+                                                <tr>
+                                                <td>T1/2</td><td>classification</td><td>0.763</td><td>0.695</td><td>0.749</td><td>0.621</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Tox21</td><td>classification</td><td>0.856</td><td>0.828</td><td>0.738</td><td>0.836</td>
+                                                </tr>
+                                                <tr>
+                                                <td>-</td><td>-</td><td class="thead-light">MAE</td><td class="thead-light">MSE</td><td class="thead-light">RMSE</td><td class="thead-light">R2</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Log D7.4</td><td>regression</td><td>0.535</td><td>0.471</td><td>0.686</td><td>0.665</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Log S</td><td>regression</td><td>0.789</td><td>1.205</td><td>1.097</td><td>0.771</td>
+                                                </tr>
+                                            </tbody>
+                                      </table>
+                                </section>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+{% endblock %}
+
+
+{% block js %}
+<script>
+
+$(function() {
+    $('#nav_model_info').addClass("active");
+});
+
+$("#table4 td").each(function(i,el){
+  var td = parseFloat($(el).text());
+  if(!isNaN(td)){
+     $(el).text(td.toFixed(3));
+  }
+});
+$("#table3 tr").find("td:eq(1), td:eq(2), td:eq(3), td:eq(4), td:eq(5)").each(function(i,el){
+  var td = parseFloat($(el).text());
+  if(!isNaN(td)){
+     $(el).text(td.toFixed(3));
+  }
+});
+$("#table2 tr").find("td:eq(1), td:eq(2), td:eq(3), td:eq(4)").each(function(i,el){
+  var td = parseFloat($(el).text());
+  if(!isNaN(td)){
+     $(el).text(td.toFixed(1));
+  }
+});
+</script>
+{% endblock%}

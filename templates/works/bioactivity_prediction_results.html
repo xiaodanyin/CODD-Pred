@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Bioactivity Prediction Results</title>
+
+{% endblock %}
+
+
+{% block content %}
+
+<header id="header" class="bg-gray py-1">
+    <div class="fs-6 my-0 text-center">Bioactivity Prediction Results</div>
+</header>
+
+<section class="py-4">
+    <div class="container px-5">
+
+        {% if ret.error %}
+            <div class="col-xs-12 ground-color text-center">
+                <h2 class="fw-bolder mb-4 mt-5 h3 text-center">Error</h2>
+                <p>{{ ret.error }}</p>
+            </div>
+        {% else %}
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <h2 class="fw-bolder mb-4 mt-5 h5 text-center">Query Molecule</h2> -->
+
+                <h1 class="h5 text-center mb-4 mt-5">Target: <strong>{{ret.target_name}}</strong></h1>
+                <table class="table table-hover fs-7 table-striped text-center" style="width: 100%;">
+                    <thead class="thead-light">
+                            <tr>
+                                <!-- <th>Target Name</th> -->
+                                <th>Index</th>
+                                {% for t in ret.title %}
+                                <th>{{ t }}</th>
+                                {% endfor %}
+                                <th>Detail</th>
+                            </tr>
+                    </thead>
+
+                    {% for idx in range(0, ret.output | length) %}
+                        <tbody>
+                            <tr style="vertical-align: middle;">
+                                <td>
+                                    {{idx + 1}} 
+                                </td>
+                                {% for x in ret.output[idx] %}
+                                    {% if ".svg" in x %}
+                                        <td>
+                                            <img src="/static/molsvg/{{ x }}" width="200" height="200" type="image/svg+xml" wmode="transparent" />
+                                            <!-- <embed src="/static/molsvg/{{ x }}" width="200" height="200" type="image/svg+xml"/> -->
+                                        </td>
+                                    {% else %}
+                                        <td>
+                                            {{ x }}
+                                        </td>
+                                    {% endif %}
+                                {% endfor %}
+                                <td>
+                                    <a href="/detail/{{ ret.single_id[idx] }}" class="button" target="_blank"><button class="btn btn-success">View</button></a>
+                                    <!-- <a href="/detail/{{ ret.single_id[idx] }}" class="button" target="_blank">View</a> -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    {% endfor %}
+                </table>
+                <!-- <p class="text-begain"><a href="/{{ret.csv_url}}"><button class="btn"><img src="/static/img/csv.png" width="30" height="30">Downlaod CSV</button></a></p> -->
+                <p class="text-begain">Download: <a href="/{{ret.csv_url}}">Click Here!</a>
+            </div>
+        </div>
+
+        {% endif %}
+
+    </div>
+</section>
+
+{% endblock %}
+
+
+{% block js %}
+<script>
+
+$(function() {
+    $('#nav_bioactivity_prediction').addClass("active");
+});
+
+</script>
+{% endblock%}

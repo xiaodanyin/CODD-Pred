@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    
+<title>Target Prediction</title>
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<header id="header" class="bg-gray py-1">
+    <div class="fs-6 my-0 text-center">Target Prediction</div>
+</header>
+
+<section class="py-1">
+    
+    <div class="container px-5">
+        <!-- Contact form-->
+        <div class="rounded-3 py-4 px-4 px-md-5"  style="min-width: 1000px;">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-10 col-xl-10">
+                    <div><p class="text-center" style="color: rgb(247,194,0);"> <strong><font size="3">There are two ways to start target prediction: input a structure by SMILES string or draw your structure</font></strong></p></div>
+                    <form id="form" method="post" action="/works/target_prediction_results" enctype="multipart/form-data">
+                        <div class="form-group">
+                          <label class="form-label" for="smiles"><i class="bi-diamond-fill"></i> Enter a SMILES string in this box</label>
+                          <input type="text" class="form-control" name="drawn_smiles" id="smiles_container">
+                        </div>
+
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Example
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#">NCCC(=O)Nc1cc(C(N)=O)c(NC(N)=O)s1</a></li>
+                                      <li><a class="dropdown-item" href="#">COc1ccc(Cl)cc1NC(=O)N1CCN(c2ccccc2Cl)CC1</a></li>
+                                      <li><a class="dropdown-item" href="#">CCOCC(=O)N1CCC(CNc2nc3c(s2)CCOc2ccc(C)cc2-3)CC1</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="text-end"><button type="reset" class="btn btn-danger">Reset</button></div>
+                            </div>
+                        </div>
+
+                        <br/>
+                        <div class="form-group">
+                            <label class="form-label" for="smiles"><i class="bi-diamond-fill"></i> Draw a molecule</label>
+                            <div id="jsme_container" style="min-width:900px; height:600px"></div>                            
+                        </div>
+
+                    </form>
+                    <div class="text-center py-3">
+                        <button id="mysubmit" class="btn btn-success">Start Prediction</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="result_merge"></div>  
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="loading" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Caculating ...</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+            <div class="text-center m-5 px-5 py-5">
+                <div class="spinner-border" style="width: 4rem; height: 4rem;" role="status">
+                  <span class="visually-hidden">Caculating...</span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div> -->
+      </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+{% block js %}
+
+<script type="text/javascript" language="javascript" src="{{ url_for('static', filename='jsme/jsme.nocache.js') }}"></script>
+
+<script>
+    //this function will be called after the JavaScriptApplet code has been loaded.
+    function jsmeOnLoad() {
+        jsmeApplet = new JSApplet.JSME("jsme_container", "100%", "100%", {
+           "options" : "oldlook,star,nocanonize"
+        });
+        jsmeApplet.setNotifyStructuralChangeJSfunction("show_smiles");
+   }
+   var patt=/\[([A-Za-z][a-z]?)H?\d*:\d+\]/g; //regexp pattern for numbered atom
+   function show_smiles() {
+       jsmeApplet.options("canonize");
+       smiles = jsmeApplet.smiles(); //atom that are colored are numbered
+       new_smiles = smiles.replace(patt, '<em>$1</em>');
+       document.getElementById("smiles_container").value = new_smiles
+   }
+</script>
+
+
+<script>
+
+$(function() {
+
+    $('#nav_target_prediction').addClass("active");
+
+    $('.dropdown-toggle').dropdown()
+    $('.dropdown-item').click(function(e) {
+        $('#smiles_container').val($(this).text())
+        e.preventDefault();// prevent the default anchor functionality
+    });
+
+    $( "#mysubmit" ).click(function() {
+        var smiles = $('#smiles_container').val();
+        console.info(smiles);
+        if (smiles.length > 0) {
+            var myModal = new bootstrap.Modal(document.getElementById('loading'))
+            myModal.show();
+            $("#form").submit();
+        } else {
+            $('#smiles_container').focus();
+        }
+    });
+
+});
+
+$("td").each(function(i,el){
+    var td = parseFloat($(el).text());
+    if(!isNaN(td)){
+       $(el).text(td.toFixed(5));
+    }
+ });
+</script>
+{% endblock%}

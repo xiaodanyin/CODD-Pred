@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+
+<title>Target Prediction Results</title>
+
+{% endblock %}
+
+
+{% block content %}
+
+<header id="header" class="bg-gray py-1">
+    <div class="fs-6 my-0 text-center">Target Prediction Results</div>
+</header>
+
+<section class="py-4">
+    <div class="container px-5">
+
+        {% if ret.error %}
+            <div class="col-xs-12 ground-color text-center">
+                <h2 class="fw-bolder mb-4 mt-5 h3 text-center">Error</h2>
+                <p>{{ ret.error }}</p>
+            </div>
+        {% else %}
+
+        <div class="col mb-5 h-100">
+            <div class="col-md-12 col-lg-12 col-xl-12">
+            <div class="text-center mt-0 mb-2">
+                <img class="border rounded" src="/static/molsvg/t_{{ ret.single_id }}.svg" width="400" height="400" type="image/svg+xml" wmode="transparent" />
+            </div>
+                <h1 class="h6 text-center fw-bolder">Query Molecule</h1>
+                <h1 class="h6 text-center">SMILES: {{ ret.smiles  }}</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <!--<h2 class="fw-bolder mb-4 mt-5 h5 text-center">Query Molecule</h2> -->
+                <table id="mytable" class="table table-striped" style="width:100%">
+                    <thead class="thead-light">
+                        <tr style="vertical-align: middle;">                      
+                            <th style="text-align:center" width="530px">Target</th>
+                            <th style="text-align:center">Uniprot ID</th>
+                            <th style="text-align:center">Target Class</th>
+                            <th style="text-align:center">Relevance Score</th>
+                            <th style="text-align:center" width="{{ ret.h_max }}px">Score Bar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for x in ret.target_prob_pair %}
+                        <tr style="vertical-align: middle;">
+                            <td style="text-align:center">
+                                {{ x[0] }}
+                            </td>
+                            <td style="text-align:center">
+                                <a href="https://www.uniprot.org/uniprotkb/{{x[2]}}" target="_blank" style="text-decoration:none">{{ x[2] }}</a>
+                            </td>
+                            <td style="text-align:center">
+                                {{ x[3] }}
+                            </td>
+                            <td style="text-align:center">
+                                {{ x[1] }}
+                            </td>
+                            <td style="text-align:left">
+                                <img src="/static/img/h.png" width="{{ x[4] }}" height="30" > 
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        {% endif %}
+
+    </div>
+</section>
+
+{% endblock %}
+
+
+{% block js %}
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+
+<script>
+
+    $(function() {
+        $('#nav_target_prediction').addClass("active");
+        $('#mytable').DataTable( {
+            // dom: 'lfrtip',   //Bfpitipf
+            dom: "<'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6'f>>" +
+        "<'row'<'col-sm-12'tr>>" +
+        "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>" + 
+        "<'row'<'col-sm-12'B>>",
+            'order': [[ 3, "desc" ]],
+            buttons: [
+                {
+                    extend: 'csv',
+                    filename: 'table',
+                    text: 'Export to CSV',
+                }
+            ]
+        });    
+    });
+
+</script>
+
+{% endblock %}

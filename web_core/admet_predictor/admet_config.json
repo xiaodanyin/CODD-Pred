@@ -1,0 +1,129 @@
+{
+  "Tox21": {
+    "model": "trimnet",
+    "task_category": "classification",
+    "model_info": "model_path/03-26-16-10-trimnet_tox21_param/best_model.ckpt"
+  },
+  "Toxcast": {
+    "model": "trimnet",
+    "task_category": "classification",
+    "model_info": "model_path/03-26-16-28-trimnet_toxcast_param/best_model.ckpt"
+  },
+  "ClinTox": {
+    "model": "trimnet",
+    "task_category": "classification",
+    "model_info": "model_path/03-26-15-56-trimnet_clintox_param/best_model.ckpt"
+  },
+  "CYP1A2_ContextPred": {
+    "model": "tdc_CompoundPred",
+    "task_category": "classification",
+    "task_name":"CYP1A2_ContextPred",
+    "model_config_path":"model_path/cyp1a2_veith_ContextPred/seed_1/config.pkl",
+    "model_state_path": "model_path/cyp1a2_veith_ContextPred/seed_1/model.pt"
+  },
+  "CYP2D6_ContextPred": {
+    "model": "tdc_CompoundPred",
+    "task_category": "classification",
+    "task_name":"CPY2D6_ContextPred",
+    "model_config_path":"model_path/cyp2d6_veith_ContextPred/seed_1/config.pkl",
+    "model_state_path": "model_path/cyp2d6_veith_ContextPred/seed_1/model.pt"
+  },
+  "CYP2D6_substrate_ContextPred": {
+    "model": "tdc_CompoundPred",
+    "task_category": "classification",
+    "task_name":"CYP2D6_substrate_ContextPred",
+    "model_config_path":"model_path/cyp2d6_substrate_carbonmangels_ContextPred/seed_1/config.pkl",
+    "model_state_path": "model_path/cyp2d6_substrate_carbonmangels_ContextPred/seed_1/model.pt"
+  },
+  "CYP2C9_ContextPred": {
+    "model": "tdc_CompoundPred",
+    "task_category": "classification",
+    "task_name":"CYP2C9_ContextPred",
+    "model_config_path":"model_path/cyp2c9_veith_ContextPred/seed_1/config.pkl",
+    "model_state_path": "model_path/cyp2c9_veith_ContextPred/seed_1/model.pt"
+  },
+  "CYP2C19_ContextPred": {
+    "model": "tdc_CompoundPred",
+    "task_category": "classification",
+    "task_name":"CYP2C19_ContextPred",
+    "model_config_path":"model_path/cyp2c19_veith_ContextPred/seed_1/config.pkl",
+    "model_state_path": "model_path/cyp2c19_veith_ContextPred/seed_1/model.pt"
+  },
+  "CYP3A4_ContextPred": {
+    "model": "tdc_CompoundPred",
+    "task_category": "classification",
+    "task_name":"CYP3A4_ContextPred",
+    "model_config_path":"model_path/cyp3a4_veith_ContextPred/seed_1/config.pkl",
+    "model_state_path": "model_path/cyp3a4_veith_ContextPred/seed_1/model.pt"
+  },
+  "CYP3A4_substrate_CNN": {
+    "model": "tdc_CompoundPred",
+    "task_category": "classification",
+    "task_name":"CYP3A4_substrate_CNN",
+    "model_config_path":"model_path/cyp3a4_substrate_carbonmangels_CNN_DeepPurpose/seed_1/config.pkl",
+    "model_state_path": "model_path/cyp3a4_substrate_carbonmangels_CNN_DeepPurpose/seed_1/model.pt"
+  },
+  "HIA_AttrMasking": {
+    "model": "tdc_CompoundPred",
+    "task_category": "classification",
+    "task_name":"HIA_AttrMasking",
+    "model_config_path":"model_path/hia_hou_AttrMasking/seed_1/config.pkl",
+    "model_state_path": "model_path/hia_hou_AttrMasking/seed_1/model.pt"
+  },
+  "BBB_martins_ContextPred": {
+    "model": "tdc_CompoundPred",
+    "task_category": "classification",
+    "task_name":"BBB_martins_ContextPred",
+    "model_config_path":"model_path/bbb_martins_contextpred/seed_1/config.pkl",
+    "model_state_path": "model_path/bbb_martins_contextpred/seed_1/model.pt"
+  },
+  "half_life_obach_AttrMasking": {
+    "model": "tdc_CompoundPred",
+    "task_category": "classification",
+    "task_name":"half_life_obach_AttrMasking",
+    "model_config_path":"model_path/half_life_obach_AttrMasking/seed_1/config.pkl",
+    "model_state_path": "model_path/half_life_obach_AttrMasking/seed_1/model.pt"
+  },
+  "pgp_broccatelli_AttrMasking": {
+    "model": "tdc_CompoundPred",
+    "task_category": "classification",
+    "task_name":"pgp_broccatelli_AttrMasking",
+    "model_config_path":"model_path/pgp_broccatelli_AttrMasking/seed_1/config.pkl",
+    "model_state_path": "model_path/pgp_broccatelli_AttrMasking/seed_1/model.pt"
+  },
+  "LogD": {
+    "model": "tdc_CompoundPred",
+    "task_category": "regression",
+    "task_name":"LogD",
+    "model_config_path":"model_path/logD_lipophilicity_astrazeneca_ContextPred/seed_1/config.pkl",
+    "model_state_path": "model_path/logD_lipophilicity_astrazeneca_ContextPred/seed_1/model.pt"
+  },
+  "LogS": {
+    "model": "tdc_CompoundPred",
+    "task_category": "regression",
+    "task_name":"LogS",
+    "model_config_path":"model_path/logs_solubility_aqsoldb_AttentiveFP/seed_1/config.pkl",
+    "model_state_path": "model_path/logs_solubility_aqsoldb_AttentiveFP/seed_1/model.pt"
+  },
+  "Trimnet_small_mol_target_prob": {
+    "model": "trimnet",
+    "task_category": "classification",
+    "model_info": "model_path/human_threshold_10_trimnet/best_model.ckpt"
+  },
+  "Trimnet_small_mol_target_added_neg_all_prob": {
+    "model": "trimnet",
+    "task_category": "classification",
+    "model_info": "model_path/human_threshold_10_added_neg_all_trimnet/best_model.ckpt"
+  },
+  "Trimnet_small_mol_target_added_neg_deepsearch_prob": {
+    "model": "trimnet",
+    "task_category": "classification",
+    "model_info": "model_path/human_threshold_10_added_neg_deepsearch_trimnet/best_model.ckpt"
+  },
+  "ChemProp_small_mol_target_classfication": {
+    "model": "chemprop",
+    "task_category": "multi-classification",
+    "model_info": "model_path/human_threshold_10_pos_class",
+    "target2label": "model_path/human_threshold_10_pos_class/std_name2label.txt"
+  }
+}

@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+{% import 'wtf.html' as wtf %}
+
+{% block head %}
+    
+<title>Bioactivity Prediction</title>
+
+<style>
+
+.control-label {display: none;}
+
+</style>
+
+{% endblock %}
+
+
+
+{% block content %}
+
+<header id="header" class="bg-gray py-1">
+    <div class="fs-6 my-0 text-center">Bioactivity Prediction</div>
+</header>
+
+
+<section class="py-1">
+    
+    <div class="container px-5">
+        <!-- Contact form-->
+        <div class="rounded-3 py-4 px-4 px-md-5" style="min-width: 1000px;">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-10 col-xl-10">
+                    <div><p class="text-center" style="color: rgb(247,194,0);"> <strong><font size="3">Before submission, please enter a valid SMILES (support files: .smi/.sdf), select a target and a prediction mode</font></strong></p></div>
+                    <form id="form" method="post" action="/works/bioactivity_prediction_results" enctype="multipart/form-data">
+
+                        <div class="form-group">
+                        <label class="form-label"><i class="bi-diamond-fill"></i> STEP 1: Input a molecule</label>
+                        <ul class="nav nav-tabs mb-3" id="tabs-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="tabs-1-tab" data-bs-toggle="pill" data-bs-target="#tabs-1" type="button" role="tab" aria-controls="tabs-1" aria-selected="true">SMILES</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="tabs-2-tab" data-bs-toggle="pill" data-bs-target="#tabs-2" type="button" role="tab" aria-controls="tabs-2" aria-selected="false">Draw</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="tabs-3-tab" data-bs-toggle="pill" data-bs-target="#tabs-3" type="button" role="tab" aria-controls="tabs-3" aria-selected="false">Files</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="tabs-tabContent">
+                            <div class="tab-pane fade" id="tabs-1" role="tabpanel" aria-labelledby="tabs-1-tab">
+                                <div class="form-group">
+                                    <textarea id="smiles" name="smiles" class="form-control inputstl" rows="5" placeholder="Examples:CCC(=O)O, C(F)(F)F" ></textarea> 
+                                </div>          
+                                <div class="row align-items-start">
+                                    <div class="col">
+                                        <div class="dropdown">
+                                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              Example
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item" href="#">CC(C)(C(=O)NC1C2CC3CC1CC(C(=O)O)(C3)C2)N1CCC(c2ccccc2)CC1</a></li>
+                                              <li><a class="dropdown-item" href="#">N#Cc1ccc2c(c1)[nH]c(=O)n2[C@H]1CCN(C(=O)O[C@H]2C3CC4CC2C[C@](C(N)=O)(C4)C3)C1</a></li>
+                                              <li><a class="dropdown-item" href="#">O=C(c1csc(-c2ccncc2)c1)N1CCCCC1</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="text-end"><button type="reset" class="btn btn-danger">Reset</button></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade show active" id="tabs-2" role="tabpanel" aria-labelledby="tabs-2-tab">
+
+                                <div class="form-group">
+                                    <!-- <label class="form-label" for="smiles">Draw a molecule</label> -->
+                                    <div id="jsme_container" style="min-width:900px; width:100%; height:600px"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">SMILES: </label>
+                                    <!-- <input class="form-control" id="smiles_container" name="drawn_smiles" disabled> -->
+                                    <input class="form-control" id="smiles_container" name="drawn_smiles">
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="tabs-3" role="tabpanel" aria-labelledby="tabs-3-tab">
+                                
+                                    {{ wtf.form_field(form.file) }}
+ 
+                            </div>
+                        </div>
+                        <br/>
+                        <label class="form-label"><i class="bi-diamond-fill"></i> STEP 2: Choose a target</label>
+                        <!-- <input type="text" class="form-control" id="target"> -->
+                        {{ wtf.form_field(form.target_name) }}
+                        <div class="mt-3 text-end"><button type="reset" class="btn btn-danger">Reset</button></div>
+
+                        <br/>
+                        <label class="form-label"><i class="bi-diamond-fill"></i> STEP 3: Choose a prediction mode</label>
+                        {{ wtf.form_field(form.strategy) }}
+                        <div class="mt-3 text-end"><button type="reset" class="btn btn-danger">Reset</button></div>
+
+                    </form>
+                    <div class="text-center py-3">
+                        <button id="mysubmit" class="btn btn-success">Start Prediction</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="loading" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Caculating ...</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+            <div class="text-center m-5 px-5 py-5">
+                <div class="spinner-border" style="width: 4rem; height: 4rem;" role="status">
+                  <span class="visually-hidden">Caculating...</span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div> -->
+      </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+
+{% block js %}
+<script type="text/javascript" language="javascript" src="{{ url_for('static', filename='jsme/jsme.nocache.js') }}"></script>
+<script>
+    //this function will be called after the JavaScriptApplet code has been loaded.
+    function jsmeOnLoad() {
+        jsmeApplet = new JSApplet.JSME("jsme_container", "100%", "100%", {
+           "options" : "oldlook,star,nocanonize"
+        });
+        jsmeApplet.setNotifyStructuralChangeJSfunction("show_smiles");
+   }
+   var patt=/\[([A-Za-z][a-z]?)H?\d*:\d+\]/g; //regexp pattern for numbered atom
+   function show_smiles() {
+       jsmeApplet.options("canonize");
+       smiles = jsmeApplet.smiles(); //atom that are colored are numbered
+       new_smiles = smiles.replace(patt, '<em>$1</em>');
+       document.getElementById("smiles_container").value = new_smiles
+   }
+</script>
+
+
+<script>
+// $(document).on('change', '#browsebutton :file', function() {
+//     var input = $(this),
+//         numFiles = input.get(0).files ? input.get(0).files.length : 1,
+//         label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+//     input.trigger('fileselect', [numFiles, label]);
+// });
+
+// $(document).ready( function() {
+//     $('#browsebutton :file').on('fileselect', function(event, numFiles, label) {
+//         var input = $(this).parents('.input-group').find(':text'),
+//             log = numFiles &gt; 1 ? numFiles + ' files selected' : label;
+
+//         if( input.length ) {
+//             input.val(log);
+//         } else {
+//             if( log ) alert(log);
+//         }
+
+//     });
+// });
+
+$(function() {
+    $('#nav_bioactivity_prediction').addClass("active");
+    $('.dropdown-toggle').dropdown()
+    $('.dropdown-item').click(function(e) {
+        $('#smiles').val($(this).text())
+        e.preventDefault();// prevent the default anchor functionality
+    });
+
+    $( "#mysubmit" ).click(function() {
+        var myModal = new bootstrap.Modal(document.getElementById('loading'))
+        myModal.show();
+        $("#form").submit();
+    });
+
+
+});
+</script>
+{% endblock%}
