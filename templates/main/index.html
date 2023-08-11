@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>CODD-PRED</title>
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Header-->
+            <header class="bg-gray">
+                <div id="header" class="container-fluid" style="width: 86%;">
+                    <div class="row d-flex justify-content-around align-items-center" style="height: 100%;">
+                        <div id="container-left" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <div class="my-2 text-xl-start">
+                                <!-- <h2 class="display-6 mb-4 mt-5 h5 text-center">Introduction</h2> -->
+                                <h2 class="display-6 mb-4 mt-5 h5 text-center fw-bolder" style="font-family:Engravers MT, Times, Serif;">CODD-Pred</h2>
+                                <p class="fs-5 mb-4">
+                                    Drug research and development is an expensive and time-consuming process. In the preclinical drug discovery stage, there are three main tasks: target identification, hit discovery and lead optimization. CODD-PRED is an online web server whose function runs through the whole process of drug discovery and consists of three parts: small-molecule compound target prediction, bioactivity prediction, and ADMET prediction. Among them, target prediction can facilitate target identification of bioactive compounds, bioactivity prediction and ADMET prediction can speed up the discovery of hit compounds and the optimization of lead compounds. CODD-PRED is expected to accelerate the drug discovery by facilitating the rapid design, evaluation and optimization of compounds with specific target activity.
+                                </p>
+                                <!-- <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
+                                    <a class="btn btn-outline-light btn-lg px-4" href="#!">Learn More</a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div id="container-right" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
+                            <img class="img-fluid" src="/static/img/home-1.png" alt="..."/>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Features section-->
+            <!-- <section class="py-1" id="features">
+                <div class="container px-5 my-2">
+                    <div class="row gx-0">
+                        <div class="col-lg-12">
+                            <div class="row gx-5 row-cols-1 row-cols-md-2">
+                                <div class="col mb-5 h-100">
+                                    <h2 class="fw-bolder mb-4 mt-5 h5 text-center">Target Prediction</h2>
+                                    <p class="fs-6 mb-4">
+                                        Target prediction module is supported by a high-performance double molecular graph perception framework trained on a large library of 691268 small molecules interacting with 687 human targets(13 biochemical types). The module recommends15 possible targets for the query compound, with the higher ranked targets having a higher probability, and the top ranked target being the most probable target for the query compound. 
+                                    </p>
+                                    <img class="img-fluid rounded-3 my-2" src="/static/img/home-2.png" alt="..."/>
+                                    <a class="btn btn-primary" style="float: right;" href="/works/target_prediction">Get Started</a>
+                                </div>
+                                <div class="col mb-5 h-100">
+                                    <h2 class="fw-bolder mb-4 mt-5 h5 text-center">Bioactivity Prediction</h2>
+                                    <p class="fs-6 mb-4">
+                                        Bioactivity prediction module is supported by a series of well-performing models trained by a multi-model self-validation activity prediction framework, which provides bioactivity predictions for small molecule inhibitors of 56 targets related to cancer, metabolic diseases, and inflammatory immune diseases. Additionally, to comprehensively evaluate the potential of the query compound to become drug candidate, the module incorporates prediction models for 16 ADMET-related endpoints. The module allows users to obtain predicted activity value of the query compound against a specific target as well as to evaluate its ADEMT-related properties.    
+                                    </p>
+                                    <img class="img-fluid rounded-3 my-2" src="/static/img/home-3.png" alt="..."/>
+                                    <a class="btn btn-primary" style="float: right;" href="/works/bioactivity_prediction">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <section class="py-1" id="features1">
+                <div class="container px-5 my-2">
+                    <div class="row gx-0">
+                        <div class="col-lg-12">
+
+                            <h2 class="h3 mb-4 mt-5 text-center fw-bolder">Target Prediction</h2>
+                            <p class="fs-5 mb-4">
+                                Target prediction module is supported by a high-performance double molecular graph perception framework trained on a large library of 691268 small molecules interacting with 687 human targets (13 biochemical types). The framework ranks the probable targets of the query molecule, when the relevance score corresponding to a target is greater, the target is more probably to be the target of the query molecule. This module can assist scientists to quickly obtain the information of possible targets of bioactive molecules for further research.
+                            </p>
+                            <div class="text-center">
+                                <img class="img-fluid rounded-3 my-2" src="/static/img/home-2.png" style="width:80%;" alt="..."/>
+                            </div>
+                            <div><br></div>
+                            <div class="text-end">
+                                <a class="btn btn-primary" href="/works/target_prediction">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-1" id="features2">
+                <div class="container px-5 my-2">
+                    <div class="row gx-0">
+                        <div class="col-lg-12">
+
+                            <h2 class="h3 mb-4 mt-5 text-center fw-bolder">Bioactivity Prediction</h2>
+                            <p class="fs-5 mb-4">
+                                Bioactivity prediction module is supported by a series of well-performing models trained by a multi-model self-validation activity prediction framework, which can provide bioactivity prediction for small molecular ligands of 56 targets related to cancer, metabolic diseases, and inflammatory immune diseases. Additionally, to further assess the potential of the query molecule to become drug candidate, the module incorporates predictive models for 23 ADMET-related endpoints. This module allows users to obtain predicted pIC<sub>50</sub> value of the query molecule against a specific target as well as to evaluate its ADEMT-related properties. 
+                            </p>
+                            <div class="text-center">
+                                <img class="img-fluid rounded-3 my-2"  style="width:90%;" src="/static/img/home-3.png" alt="..."/>
+                            </div>
+                            <!-- <div class="text-center"> -->
+                            <div><br></div>
+                            <div class="text-end">
+                                <a class="btn btn-primary" href="/works/bioactivity_prediction">Get Started</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+{% endblock %}
+
+
+{% block js %}
+<script>
+
+
+    function setheight() {
+        let container = $('#header');
+        let screen_height = $(window).height() - 74;
+        let left = $('#container-left').outerHeight();
+        let right = $('#container-right').outerHeight();
+
+        if ($(window).outerWidth() < 992) {    
+            if (left + right > screen_height) {
+                container.css('height', left + right);
+            } else {
+                container.css('height', screen_height);
+            }
+        } else {
+            if (left > screen_height || right > screen_height) {
+                if (left > right) {
+                    container.css('height', left);
+                } else {
+                    container.css('height', right);
+                }
+            } else {
+                container.css('height', screen_height);
+            }
+        }
+
+    }
+
+    $(function() {
+        $('#nav_home').addClass("active");
+        setheight();
+        $(window).resize(setheight);
+    });
+
+
+
+</script>
+
+{% endblock %}

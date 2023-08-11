@@ -1,0 +1,298 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+<title>Bioactivity Prediction Details</title>
+<!-- <style type="text/css"> 
+.AutoNewline 
+{ 
+    word-break: break-all;/*必须*/ 
+
+} 
+</style>  -->
+
+{% endblock %}
+
+
+{% block content %}
+
+<header id="header" class="bg-gray py-1">
+    <div class="fs-6 my-0 text-center">Bioactivity Prediction Details</div>
+</header>
+
+
+<section class="py-4">
+    <div class="container px-5">
+
+        {% if ret.error %}
+            <div class="col-xs-12 ground-color text-center">
+                <h2 class="fw-bolder mb-4 mt-5 h3 text-center">Error</h2>
+                <p>{{ ret.error }}</p>
+            </div>
+        {% else %}
+        <!-- <div class="alert alert-primary" role="alert" style="word-break:break-all;">
+            <div class="d-flex align-items-center justify-content-between">
+                
+                <div>
+                    <strong><span class="d-flex align-items-center">{{ ret.smiles }}</span></strong>
+                </div>
+                
+            </div>
+        </div> -->
+        
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-xl-12">
+                <div class="text-center mt-0 mb-2">
+                    <img class="border rounded" src="/static/molsvg/{{ ret.svg_path  }}" width="400" height="400" type="image/svg+xml" wmode="transparent" />
+                </div>
+                <h1 class="h6 text-center fw-bolder">Query Molecule</h1>
+                <h1 class="h6 text-center">SMILES: {{ ret.smiles  }}</h1>
+            </div>
+        </div>
+
+        <section class="mb-5">
+            <h2 class="mb-4 mt-6 h5 fw-bolder"><i class="bi-diamond-fill"></i> Bioactivity</h2>
+            <p class="fs-6 mb-4 text-center">
+                <h2 class="h5 text-center">Target: <strong>{{ret.target_name}}</strong></h2>
+                <div><br></div>
+                <h2 class="h3 text-center fw-bolder">pIC<sub>50</sub> = {{ret.pred_value}}</h2>
+            </p>
+        </section>
+
+
+        <section class="mb-5">
+            <h2 class="mb-4 mt-6 h5 fw-bolder"><i class="bi-diamond-fill"></i> Physicochemical and Medicinal Chemical Properties</h2>
+            <table class="table fs-7 table-striped text-center">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Category</th>
+                    <th>Property</th>
+                    <th>Value</th>
+                    <!-- <th class="text-primary"  width="200px">Interpretation</th> -->
+                    <th width="200px">Interpretation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="5">Physicochemical Propertiy</td>
+                    <td>MW</td>
+                    <td>{{ret.molwt}}</td>
+                    <td><small>Molecular Weight</small></td>
+                  </tr>
+                  <tr>
+                    <td>TPSA</td>
+                    <td>{{ret.tpsa}}</td>
+                    <td class="AutoNewline"><small>Ideal range: 0~140</small></td>
+                  </tr>
+                  <tr>
+                    <td>logS</td>
+                    <td>{{ret.logS}}</td>
+                    <td class="AutoNewline"><small>Ideal range: -4~0.5</small></td>
+                  </tr>
+                  <tr>
+                    <td>LogD7.4</td>
+                    <td>{{ret.logD}}</td>
+                    <td class="AutoNewline"><small>Ideal range: 1~3</small></td>
+                  </tr>
+                  <tr>
+                    <td>logP</td>
+                    <td>{{ret.logp}}</td>
+                    <td class="AutoNewline"><small>Ideal range: 0~3</small></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="4">Medicinal Chemistry</td>
+                    <td>QED</td>
+                    <td>{{ret.qed}}</td>
+                    <td class="AutoNewline"><small>The range is from 0 (unfavorable properties) to 1 (favorable properties)</small></td>
+                  </tr>
+                  <tr>
+                    <td>SAScore</td>
+                    <td>{{ret.sascore}}</td>
+                    <td class="AutoNewline"><small>The range is from 1 (easy to synthesize) to 10 (difficult to synthesize)</small></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </section>
+
+
+        <section class="mb-5">
+            <h2 class="mb-4 mt-6 h5 fw-bolder"><i class="bi-diamond-fill"></i> ADMET Properties </h2>
+            <table class="table fs-7 table-striped text-center">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Category</th>
+                    <th>Property</th>
+                    <th>Probability</th>
+                    <!-- <th class="text-primary" width="200px">Interpretation</th> -->
+                    <th width="230px">Interpretation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="2">Absorption</td>
+                    <td>HIA</td>
+                    <td>{{ret.HIA}}</td>
+                    <td class="AutoNewline"><small>Category 0 (HIA<sup>-</sup>), category 1 (HIA<sup>+</sup>),  and the output is the probability value of being HIA<sup>+</sup></small></td>
+                  </tr>
+                  <tr>
+                    <td>Pgp Inhibitor</td>
+                    <td>{{ret.Pgp}}</td>
+                    <td class="AutoNewline"><small>Category 0(non-inhibitor), category 1(inhibitor),  and the output is the probability value of being Pgp-inhibitor</small></td>
+                  </tr>
+                  <tr>
+                    <td>Distribution</td>
+                    <td>BBB Penetration</td>
+                    <td>{{ret.BBB}}</td>
+                    <td class="AutoNewline"><small>Category 0(BBB<sup>-</sup>), category 1: (BBB<sup>+</sup>), and the output is the probability value of being BBB<sup>+</sup></small></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="7">Metabolism</td>
+                    <td>CYP1A2 Inhibitor</td>
+                    <td>{{ret.CYP1A2}}</td>
+                    <td rowspan="7" class="AutoNewline"><small>Category 0(non-inhibitor/non-substrate), category 1(inhibitor/substrate), and the output is the probability value of being inhibitor(substrate)</small></td>
+                  </tr>
+                  <tr>
+                    <!--<td>Metabolism</td>-->
+                    <td>CYP2C9 Inhibitor</td>
+                    <td>{{ret.CYP2C9}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <!--<td>Metabolism</td>-->
+                    <td>CYP2D6 Inhibitor</td>
+                    <td>{{ret.CYP2D6}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <!--<td>Metabolism</td>-->
+                    <td>CYP2D6 Substrate</td>
+                    <td>{{ret.CYP2D6_substrate}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <!--<td>Metabolism</td>-->
+                    <td>CYP2C19 Inhibitor</td>
+                    <td>{{ret.CYP2C19}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <!--<td>Metabolism</td>-->
+                    <td>CYP3A4 Inhibitor</td>
+                    <td>{{ret.CYP3A4}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <!--<td>Metabolism</td>-->
+                    <td>CYP3A4 Substrate</td>
+                    <td>{{ret.CYP3A4_substrate}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <td>Excretion</td>
+                    <td>T<sub>1/2</sub></td>
+                    <td>{{ret.T}}</td>
+                    <td class="AutoNewline"><small>Category 0(T<sub>1/2</sub> <3h), category 1(T<sub>1/2</sub> ≥3h), and the output is the probability value belonging to category 1</small></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="12">Toxicity (Tox21 Pathway)</td>
+                    <td>NR-AR</td>
+                    <td>{{ret.NR_AR}}</td>
+                    <td rowspan="12" class="AutoNewline"><small>For each biological target, category 0(inactives), category 1(actives), and the output is the probability value of being active</small></td>
+                  </tr>
+                  <tr>
+                    <!--<td>Toxicity</td>-->
+                    <td>NR-AR-LBD</td>
+                    <td>{{ret.NR_AR_LBD}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <!-- <td>Toxicity</td> -->
+                    <td>NR-AhR</td>
+                    <td>{{ret.NR_AhR}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <!-- <td>Toxicity</td> -->
+                    <td>NR-Aromatase</td>
+                    <td>{{ret.NR_Aromatase}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <!-- <td>Toxicity</td> -->
+                    <td>NR-ER</td>
+                    <td>{{ret.NR_ER}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <!-- <td>Toxicity</td> -->
+                    <td>NR-ER-LBD</td>
+                    <td>{{ret.NR_ER_LBD}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <!-- <td>Toxicity</td> -->
+                    <td>NR-PPAR-gamma</td>
+                    <td>{{ret.NR_PPAR_gamma}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <!-- <td>Toxicity</td> -->
+                    <td>SR-ARE</td>
+                    <td>{{ret.SR_ARE}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <!-- <td>Toxicity</td> -->
+                    <td>SR-ATAD5</td>
+                    <td>{{ret.SR_ATAD5}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <!-- <td>Toxicity</td> -->
+                    <td>SR-HSE</td>
+                    <td>{{ret.SR_HSE}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <!-- <td>Toxicity</td> -->
+                    <td>SR-MMP</td>
+                    <td>{{ret.SR_MMP}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <!-- <td>Toxicity</td> -->
+                    <td>SR-p53</td>
+                    <td>{{ret.SR_p53}}</td>
+                    <!-- <td></td> -->
+                  </tr>
+                </tbody>
+              </table>
+              <p class="text-begain">Download: <a href="/{{ret.csv_url}}">Click Here!</a>
+        </section>
+
+        {% endif %}
+
+    </div>
+</section>
+
+{% endblock %}
+
+
+{% block js %}
+<script>
+
+$(function() {
+    $('#nav_bioactivity_prediction').addClass("active");
+});
+
+$("td").each(function(i,el){
+    var td = parseFloat($(el).text());
+    if(!isNaN(td)){
+       $(el).text(td.toFixed(3));
+    }
+ });
+
+</script>
+{% endblock%}

@@ -1,0 +1,340 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+<title>Explanation</title>
+
+{% endblock %}
+
+
+{% block content %}
+
+<header id="header" class="bg-gray py-1">
+  <div class="fs-6 my-0 text-center">Explanation</div>
+</header>
+
+            <!-- Page Content-->
+            <section class="py-2">
+                <div class="container px-5 my-2">
+                    <div class="row gx-5">
+                        <div class="col-lg-3">
+                            <!-- <div class="d-flex align-items-center mt-lg-5 mb-4">
+                                <img class="img-fluid rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." />
+                                <div class="ms-3">
+                                    <div class="fw-bold">Valerie Luna</div>
+                                    <div class="text-muted">News, Business</div>
+                                </div>
+                            </div> -->
+                            <div class="sticky-top">
+                                <div class="list-group" id="list-tab" role="tablist">
+                                    <a class="list-group-item" href="#about-target-prediction">Target Prediction</a> 
+                                    <a class="list-group-item" href="#about-bioactivity-prediction">Bioactivity Prediction</a> 
+                                    <a class="list-group-item" href="#about-admet-prediction">ADMET Prediction</a> 
+                                    <a class="list-group-item" href="#quick-guide">Quick Guide</a> 
+                                    <a class="list-group-item" href="#implementation">Development environment</a> 
+                                    <!-- <a class="list-group-item" href="#browser-compatibility">Browser Compatibility</a>  -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <!-- Post content-->
+                            <article>
+                                <!-- Post header-->
+                                <header class="mb-4">
+                                    <!-- Post title-->
+                                    <h1 id="about-target-prediction" class="h5">1. Target Prediction</h1>
+                                </header>
+                                <!-- Post content-->
+                                <section class="mb-4">
+                                    <h2 class="mb-4 mt-4 h5">1) Download the external validation dataset used in Target Prediction</h2>
+                                    <p class="fs-6">
+                                        Download external validation dataset <a href="/static/target_data/CODD_PRED_target_prediction_external_validation_set.xlsx">click here!</a>
+                                    </p>
+                                </section>
+                            </article>
+
+                            <!-- Post content-->
+                            <article>
+                                <!-- Post header-->
+                                <header class="mb-4">
+                                    <!-- Post title-->
+                                    <h1 id="about-bioactivity-prediction" class="h5">2. Bioactivity Prediction</h1>
+                                </header>
+                                <!-- Post content-->
+                                <section class="mb-4">
+                                    <h2 class="mb-4 mt-4 h5">1)  Information about targets included in Bioactivity Prediction</h2>
+                                    <p class="fs-6 mb-4 text-center">
+                                        <strong>Table 5.</strong> Full name of targets included in bioactivity prediction
+                                    </p>
+                                    <table class="table fs-7 table-striped text-center">
+                                        <thead class="thead-light">
+                                          <tr>
+                                            <th scope="col">Abbreviations</th>
+                                            <th scope="col">Target name</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          {% for group_data in ret.target_name_info_data %}
+                                          {% if group_data | length == 4 %}
+                                            <tr>
+                                              <td>{{group_data[0]}}</td>
+                                              <td>{{group_data[1]}}</td>
+                                            </tr>
+                                            <tr>
+                                              <td>{{group_data[2]}}</td>
+                                              <td>{{group_data[3]}}</td>
+                                            </tr>
+                                          {% else %}
+                                            <tr>
+                                              <td>{{group_data[0]}}</td>
+                                              <td>{{group_data[1]}}</td>
+                                            </tr>
+                                          {% endif %}
+                                      {% endfor %}
+                                        </tbody>
+                                      </table>
+                                </section>
+                            </article>
+
+                            <!-- Post content-->
+                            <article>
+                                <!-- Post header-->
+                                <header class="mb-4">
+                                    <!-- Post title-->
+                                    <h1 id="about-admet-prediction" class="h5">3. ADMET Prediction</h1>
+                                </header>
+                                <!-- Post content-->
+                                <section class="mb-4">
+                                    <h2 class="mb-4 mt-4 h5">1) The description of ADMET endpoints</h2>
+                                    <p class="fs-6 mb-4 text-center">
+                                      <strong>Table 6.</strong> Description of ADMET endpoints
+                                    </p>
+                                    <table class="table fs-7 table-striped text-center">
+                                        <thead class="thead-light">
+                                          <!-- <tr>
+                                            <th scope="col" rowspan="2" style="vertical-align:middle">Hit target number</th>
+                                            <th scope="col" colspan="4">top-K accuracy (%), K=
+                                            </th>
+                                          </tr> -->
+                                          <tr>
+                                            <th scope="col">Category</th>
+                                            <th scope="col">Property</th>
+                                            <th scope="col">Descriptions</th>
+                                            <th scope="col">Results Interpretation</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td rowspan="5">Physicochemical Propertiy</td>
+                                            <td>MW</td>
+                                            <td class="text-start">The measure of the sum of the atomic weight values of the atoms in a molecule</td>
+                                            <td class="text-start">Molecular Weight</td>
+                                          </tr>
+                                          <tr>
+                                            <td>LogD7.4</td>
+                                            <td class="text-start">LogD7.4 is the 10-based logarithmic value of the octanol/water distribution coefficient at pH=7.4 and is used to measure the solubility of a compound in a lipid environment</td>
+                                            <td class="text-start">The ideal range for LogD7.4 is 1~3 log mol/L</td>
+                                          </tr>
+                                          <tr>
+                                            <td>LogS</td>
+                                            <td class="text-start">LogS is the 10-based logarithmic of the aqeuous solubility value and is used to measure the ability of a compound to dissolve in water</td>
+                                            <td class="text-start">The ideal range for LogS is -4 to 0.5 log mol/L</td>
+                                          </tr>
+                                          <tr>
+                                            <td>LogP</td>
+                                            <td class="text-start">LogP is the 10-based logarithmic value of octanol/water partition coefficient and is used to adduce how a drug molecule partitions itself into the lipid surroundings of the receptor microenvironment</td>
+                                            <td class="text-start">The ideal range for TPSA is 0 to 3 log mol/L</td>
+                                          </tr>
+                                          <tr>
+                                            <td>TPSA</td>
+                                            <td class="text-start">TPSA(topological polar surface area) is the surface sum over all polar atoms and is used to measure the ability of a compound to penetrate cell membranes</td>
+                                            <td class="text-start">The ideal range for TPSA is 0 to 140</td>
+                                          </tr>
+                                          <tr>
+                                            <td rowspan="2">Medicinal Chemistry</td>
+                                            <td>QED</td>
+                                            <td class="text-start">QED(quantitative estimate of drug-likeness) is a method to quantify drug similarity as a value between 0 and 1</td>
+                                            <td class="text-start">The range is from 0 (unfavorable properties) to 1 (favorable properties)</td>
+                                          </tr>
+                                          <tr>
+                                            <td>SAscore</td>
+                                            <td class="text-start">SA score (Synthetic Accessibility score) is a method to estimate the ease of synthesis of a compound with a value between 1 and 10</td>
+                                            <td class="text-start">The predicted value closer to 1 indicating that the compound is easy to synthesize, and closer to 10 indicating that the compound is difficult to synthesize</td>
+                                          </tr>
+                                          <tr>
+                                            <td rowspan="2">Absorption</td>
+                                            <td>HIA</td>
+                                            <td class="text-start">Human intestinal absorption (HIA) of oral drugs is critical for drug delivery to the target, and a molecule with less than 30% HIA is considered poorly absorbed</td>
+                                            <td class="text-start">Category 0: HIA >=30%, Category 1: HIA <30%, and the output is the probability value belonging to Category 1, ranging from 0 to 1</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Pgp inhibitor</td>
+                                            <td class="text-start">The inhibitor of P-glycoprotein. P-glycoprotein (Pgp) is an ABC transporter protein involved in intestinal absorption, drug metabolism, and brain penetration, and its inhibition can seriously alter a drug's bioavailability and safety</td>
+                                            <td class="text-start">Category 0: Non-inhibitor, Category 1: Inhibitor, and the output is the probability value of being Pgp-inhibitor, ranging from 0 to 1</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Distribution</td>
+                                            <td>BBB Penetration</td>
+                                            <td class="text-start"> As a membrane separating circulating blood and brain extracellular fluid, the blood-brain barrier (BBB) is the protection layer that blocks most foreign drugs, BBBP determines whether a compound can enter the brain region
+                                            </td>
+                                            <td class="text-start">Category 0: BBB<sup>-</sup> (logBB < -1), Category 1: BBB<sup>+</sup> (logBB ≥ -1), and the output is the probability value of belonging to Category 1, ranging from 0 to 1</td>
+                                          </tr>
+                                          <tr>
+                                            <td rowspan="7">Metabolism</td>
+                                            <td>CYP2C9 inhibitor</td>
+                                            <td class="text-start" rowspan="7">Cytochromes P450 (CYPs) are crucial in the metabolism of various molecules and chemicals within cells and contain 57 isoenzymes that metabolize approximately 2/3 of known drugs in humans, 80% of which are metabolized by 5 isozymes 1A2, 3A4, 2C9, 2C19 and 2D6. If a compound is a substrate for CYPs, it may be oxidized by enzymes, leading to inactive and/or toxic products, and if a compound is a CYP inhibitor, it may increase the concentration of other drugs, leading to drug interaction mediated toxicity</td>
+                                            <td rowspan="7" class="text-start">Category 0: Non-inhibitor(Non-substrate), Category 1: Inhibitor(Substrate), and the output is the probability value of being inhibitor(Substrate), ranging from 0 to 1</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CYP2D6 inhibitor</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CYP3A4 inhibitor</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CYP2C19 inhibitor</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CYP1A2 inhibitor</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CYP2D6 substrate</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CYP3A4 substrate</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Excretion</td>
+                                            <td>T<sub>1/2</sub></td>
+                                            <td class="text-start">Half life(T<sub>1/2</sub>) of a drug is the duration for the concentration of the drug in the body to be reduced by half. When a drug has a short T<sub>1/2</sub> (<3h), it usually indicates that the drug has a narrow therapeutic window and high toxicity</td>
+                                            <td class="text-start">Category 0: T<sub>1/2</sub> <3h, Category 1: T<sub>1/2</sub> ≥3h, and the output is the probability value belonging to Category 1, ranging from 0 to 1.</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Toxicity</td>
+                                            <td>Tox21</td>
+                                            <td class="text-start">Qualitative toxicity measurements on 12 biological targets, including nuclear receptors and stress response pathways, specifically NR-AR, NR-AR-LBD, NR-AhR, NR-Aromatase, NR-ER, NR-ER-LBD, NR-PPAR-gamma, SR-ARE, SR-ATAD5, SR-HSE, SR-MMP, SR-p53 </td>
+                                            <td class="text-start">For each biological target, Category 0: inactives, Category 1: active, and the output is the probability value of being actives, ranging from 0 to 1</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </section>
+                            </article>
+
+
+                            <!-- Post content-->
+                            <article>
+                                <!-- Post header-->
+                                <header class="mb-4">
+                                    <!-- Post title-->
+                                    <h1 id="quick-guide" class="h5">4. Quick Guide</h1>
+                                </header>
+                                <!-- Post content-->
+                                <section class="mb-4">
+                                  <img class="img-fluid rounded-3 my-2" src="/static/img/input_output.png" alt="...">
+                                  <p class="fs-6 mb-0 text-center"><strong>Figure 3.</strong> Graphical interface for input and output of CODD-PRED</p>
+                                </section>
+                            </article>
+
+                            <!-- Post content-->
+                            <article>
+                                <!-- Post header-->
+                                <header class="mb-4">
+                                    <!-- Post title-->
+                                    <h1 id="implementation" class="h5">5. Development environment</h1>
+                                </header>
+                                <!-- Post content-->
+                                <section class="mb-4">
+                                  <p class="fs-6 mb-4 text-center">
+                                    <strong>Table 7.</strong> The development environment of CODD-PRED
+                                </p>
+                                <table class="table fs-7 table-striped text-center">
+                                    <thead class="thead-light">
+                                      <tr>
+                                        <th scope="col">Library</th>
+                                        <th scope="col">Version</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      {% for group_data in ret.lib_info_data %}
+                                      {% if group_data | length == 4 %}
+                                        <tr>
+                                          <td>{{group_data[0]}}</td>
+                                          <td>{{group_data[1]}}</td>
+                                        </tr>
+                                        <tr>
+                                          <td>{{group_data[2]}}</td>
+                                          <td>{{group_data[3]}}</td>
+                                        </tr>
+                                      {% else %}
+                                        <tr>
+                                          <td>{{group_data[0]}}</td>
+                                          <td>{{group_data[1]}}</td>
+                                        </tr>
+                                      {% endif %}
+                                  {% endfor %}
+                                    </tbody>
+                                  </table>
+                                </section>
+                                <section class="mb-4">
+                                  <p class="fs-6 mb-4 text-center">
+                                    <strong>Table 8.</strong> Open source library license for website development
+                                </p>
+                                <table class="table fs-7 table-striped text-center">
+                                    <thead class="thead-light">
+                                      <tr>
+                                        <th scope="col">Library</th>
+                                        <th scope="col">Author</th>
+                                        <th scope="col">License</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+ 
+                                        <tr>
+                                          <td>chemprop</td>
+                                          <td>Wengong Jin et al.</td>
+                                          <td><a href="https://github.com/chemprop/chemprop/blob/master/LICENSE.txt">MIT License</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td>TDC</td>
+                                          <td>TDC Team</td>
+                                          <td><a href="https://github.com/mims-harvard/TDC/blob/main/LICENSE">MIT License</a></td>
+                                        </tr>
+
+                   
+
+                                    </tbody>
+                                  </table>
+                                </section>
+                                
+                            </article>
+
+                            <!-- Post content-->
+                            <!-- <article> -->
+                                <!-- Post header-->
+                                <!-- <header class="mb-4"> -->
+                                    <!-- Post title-->
+                                    <!-- <h1 id="browser-compatibility" class="h5">6. Browser Compatibility</h1> -->
+                                <!-- </header> -->
+                                <!-- Post content-->
+                                <!-- <section class="mb-4"> -->
+                                <!-- </section> -->
+                            <!-- </article> -->
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+{% endblock %}
+
+{% block js %}
+<script>
+
+$(function() {
+    $('#nav_explanation').addClass("active");
+});
+
+</script>
+{% endblock%}

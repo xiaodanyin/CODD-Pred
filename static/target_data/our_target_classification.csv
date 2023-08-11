@@ -1,0 +1,697 @@
+standard_name,uniprot_id,level_1
+Lysine demethylase 4E,B2RXH2,Epigenetic regulator
+Serum/glucocorticoid regulated kinase 1,O00141,Enzyme
+"Thymidine kinase 2, mitochondrial",O00142,Enzyme
+Bone morphogenetic protein receptor type 1B,O00238,Enzyme
+"Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit delta",O00329,Enzyme
+Phosphodiesterase 2A,O00408,Enzyme
+Polo like kinase 4,O00444,Enzyme
+Fatty acid amide hydrolase,O00519,Enzyme
+"Dead-box helicase 3, X-linked",O00571,Enzyme
+Fructose-bisphosphatase 2,O00757,Enzyme
+Acetyl-CoA carboxylase beta,O00763,Enzyme
+Stearoyl-CoA desaturase,O00767,Enzyme
+Ectonucleotide pyrophosphatase/phosphodiesterase 3,O14638,Enzyme
+Prostaglandin E synthase,O14684,Enzyme
+Protein arginine methyltransferase 5,O14744,Epigenetic regulator
+Telomerase reverse transcriptase,O14746,Enzyme
+Checkpoint kinase 1,O14757,Enzyme
+Calpain 9,O14815,Enzyme
+Nuclear factor kappa B kinase subunit beta,O14920,Enzyme
+Aurora kinase A,O14965,Enzyme
+Conserved helix-loop-helix ubiquitous kinase,O15111,Enzyme
+1-acylglycerol-3-phosphate O-acyltransferase 2,O15120,Enzyme
+"MDM4, p53 regulator",O15151,Unclassified protein
+Histone deacetylase 3,O15379,Epigenetic regulator
+Phospholipase A2 group X,O15496,Enzyme
+3-phosphoinositide dependent protein kinase 1,O15530,Enzyme
+Potassium calcium-activated channel subfamily N member 4,O15554,Ion channel
+Phosphoglycerate dehydrogenase,O43175,Enzyme
+Calcium voltage-gated channel subunit alpha1 G,O43497,Ion channel
+Carbonic anhydrase 12,O43570,Enzyme
+Hypocretin receptor 1,O43613,Membrane receptor
+Hypocretin receptor 2,O43614,Membrane receptor
+BUB1 mitotic checkpoint serine/threonine kinase,O43683,Enzyme
+Aldo-keto reductase family 1 member B10,O60218,Enzyme
+Lysine demethylase 1A,O60341,Epigenetic regulator
+Meningioma expressed antigen 5 (hyaluronidase),O60502,Enzyme
+N-myristoyltransferase 2,O60551,Enzyme
+Janus kinase 2,O60674,Enzyme
+Janus kinase 2,O60674,Enzyme
+Isoprenylcysteine carboxyl methyltransferase,O60725,Enzyme
+Hematopoietic prostaglandin D synthase,O60760,Enzyme
+Bromodomain containing 4/bromodomain containing 2,O60885,Epigenetic regulator
+Sphingomyelin phosphodiesterase 2,O60906,Enzyme
+Cathepsin V,O60911,Enzyme
+Rho associated coiled-coil containing protein kinase 2,O75116,Enzyme
+Lysine demethylase 4A,O75164,Epigenetic regulator
+Lysine demethylase 4A,O75164,Epigenetic regulator
+Lysine demethylase 4A,O75164,Epigenetic regulator
+ADAM metallopeptidase with thrombospondin type 1 motif 4,O75173,Enzyme
+Endoplasmic reticulum to nucleus signaling 1,O75460,Enzyme
+Nuclear receptor subfamily 1 group I member 2,O75469,Transcription factor
+Transient receptor potential cation channel subfamily A member 1,O75762,Ion channel
+Diacylglycerol O-acyltransferase 1,O75907,Enzyme
+Sterol O-acyltransferase 2,O75908,Enzyme
+Gamma-butyrobetaine hydroxylase 1,O75936,Enzyme
+Phosphodiesterase 5A,O76074,Enzyme
+Phosphodiesterase 9A,O76083,Enzyme
+Dimethylarginine dimethylaminohydrolase 1,O94760,Enzyme
+Aldehyde dehydrogenase 1 family member a2,O94788,Enzyme
+Sphingosine-1-phosphate receptor 2,O95136,Membrane receptor
+Calcium voltage-gated channel subunit alpha1 H,O95180,Ion channel
+Lysine acetyltransferase 7,O95251,Enzyme
+Phosphodiesterase 8B,O95263,Enzyme
+Solute carrier family 34 member 2,O95436,Transporter
+Tyrosyl-DNA phosphodiesterase 2,O95551,Enzyme
+Geranylgeranyl diphosphate synthase 1,O95749,Enzyme
+P21 (RAC1) activated kinase 4,O96013,Enzyme
+Checkpoint kinase 2,O96017,Enzyme
+Lactate dehydrogenase A,P00338,Enzyme
+Dihydrofolate reductase,P00374,Enzyme
+Glutathione-disulfide reductase,P00390,Enzyme
+Purine nucleoside phosphorylase,P00491,Enzyme
+"ABL proto-oncogene 1, non-receptor tyrosine kinase",P00519,Enzyme
+Epidermal growth factor receptor,P00533,Enzyme
+"Coagulation factor II, thrombin",P00734,Enzyme
+"Complement component 1, r subcomponent",P00736,Enzyme
+Coagulation factor IX,P00740,Enzyme
+Coagulation factor X,P00742,Enzyme
+Complement factor D,P00746,Enzyme
+Plasminogen,P00747,Enzyme
+Coagulation factor XII,P00748,Enzyme
+"Plasminogen activator, urokinase",P00749,Enzyme
+"Plasminogen activator, tissue type",P00750,Enzyme
+Complement factor B,P00751,Enzyme
+Renin,P00797,Enzyme
+Carbonic anhydrase 1,P00915,Enzyme
+Carbonic anhydrase 2,P00918,Enzyme
+"Kras proto-oncogene, gtpase",P01116,Enzyme
+Tumor necrosis factor,P01375,Secreted protein
+Retinol binding protein 4,P02753,Secreted protein
+Albumin,P02768,Secreted protein
+Estrogen receptor 1,P03372,Transcription factor
+Coagulation factor XI,P03951,Enzyme
+Kallikrein b1,P03952,Enzyme
+Matrix metallopeptidase 1,P03956,Enzyme
+"Raf-1 proto-oncogene, serine/threonine kinase",P04049,Enzyme
+Glucosylceramidase beta,P04062,Enzyme
+"Protein C, inactivator of coagulation factors VA and VIIIA",P04070,Enzyme
+Nuclear receptor subfamily 3 group C member 1,P04150,Transcription factor
+Erb-b2 receptor tyrosine kinase 2,P04626,Enzyme
+Neurotrophic receptor tyrosine kinase 1,P04629,Enzyme
+Tumor protein p53,P04637,Transcription factor
+Cytochrome P450 family 1 subfamily A member 1,P04798,Enzyme
+Thymidylate synthetase,P04818,Enzyme
+Amyloid beta precursor protein,P05067,Membrane receptor
+Arginase 1,P05089,Enzyme
+Aldehyde dehydrogenase 2 family (mitochondrial),P05091,Enzyme
+Cytochrome P450 family 17 subfamily A member 1,P05093,Enzyme
+Cytochrome P450 family 11 subfamily A member 1,P05108,Enzyme
+Serpin family E member 1,P05121,Secreted protein
+Protein kinase C gamma,P05129,Enzyme
+Myeloperoxidase,P05164,Enzyme
+Cytochrome P450 family 1 subfamily A member 2,P05177,Enzyme
+Cytochrome P450 family 2 subfamily E member 1,P05181,Enzyme
+"Alkaline phosphatase, liver/bone/kidney",P05186,Enzyme
+Protein kinase C beta,P05771,Enzyme
+Hepsin,P05981,Enzyme
+Insulin receptor,P06213,Enzyme
+"LCK proto-oncogene, Src family tyrosine kinase",P06239,Enzyme
+"Fyn proto-oncogene, Src family tyrosine kinase",P06241,Enzyme
+Butyrylcholinesterase,P06276,Enzyme
+Progesterone receptor,P06401,Transcription factor
+Cyclin dependent kinase 1,P06493,Enzyme
+Glycogen phosphorylase L,P06737,Enzyme
+Hexosaminidase subunit alpha,P06865,Enzyme
+Kallikrein 1,P06870,Enzyme
+Epoxide hydrolase 1,P07099,Enzyme
+Lactate dehydrogenase B,P07195,Enzyme
+"Alcohol dehydrogenase 1a (class I), alpha polypeptide",P07327,Enzyme
+Colony stimulating factor 1 receptor,P07333,Enzyme
+Cathepsin D,P07339,Enzyme
+Calpain 1,P07384,Enzyme
+Carbonic anhydrase 3,P07451,Enzyme
+"Protease, serine 1",P07477,Enzyme
+Adrenoceptor beta 2,P07550,Membrane receptor
+Cathepsin L,P07711,Enzyme
+Cathepsin B,P07858,Enzyme
+RET proto-oncogene,P07949,Enzyme
+Insulin like growth factor 1 receptor,P08069,Enzyme
+Cholinergic receptor muscarinic 2,P08172,Membrane receptor
+Cholinergic receptor muscarinic 4,P08173,Membrane receptor
+ATP binding cassette subfamily B member 1,P08183,Transporter
+Nuclear receptor subfamily 3 group C member 2,P08235,Transcription factor
+Heat shock protein 90 alpha family class B member 1,P08238,Other cytosolic protein
+"Elastase, neutrophil expressed",P08246,Enzyme
+Matrix metallopeptidase 2,P08253,Enzyme
+Matrix metallopeptidase 3,P08254,Enzyme
+Cathepsin G,P08311,Enzyme
+"Protein tyrosine phosphatase, receptor type C",P08575,Enzyme
+"MET proto-oncogene, receptor tyrosine kinase",P08581,Enzyme
+Adrenoceptor beta 1,P08588,Membrane receptor
+Cytochrome P450 family 3 subfamily A member 4,P08684,Enzyme
+Coagulation factor VII,P08709,Enzyme
+Steroid sulfatase,P08842,Enzyme
+5-hydroxytryptamine receptor 1A,P08908,Membrane receptor
+Cholinergic receptor muscarinic 5,P08912,Membrane receptor
+Adrenoceptor alpha 2A,P08913,Membrane receptor
+Glutathione S-transferase pi 1,P09211,Enzyme
+Matrix metallopeptidase 7,P09237,Enzyme
+Matrix metallopeptidase 10,P09238,Enzyme
+Galectin 1,P09382,Other cytosolic protein
+Platelet derived growth factor receptor beta,P09619,Enzyme
+Poly(ADP-ribose) polymerase 1,P09874,Enzyme
+Arachidonate 5-lipoxygenase,P09917,Enzyme
+"Furin, paired basic amino acid cleaving enzyme",P09958,Enzyme
+Leukotriene A4 hydrolase,P09960,Enzyme
+Adenosine A3 receptor,P0DMS8,Membrane receptor
+"Glucosidase, alpha",P10253,Enzyme
+Androgen receptor,P10275,Transcription factor
+Acrosin,P10323,Enzyme
+"BCL2, apoptosis regulator",P10415,Ion channel
+"Protein tyrosine phosphatase, receptor type F",P10586,Membrane receptor
+"Protein tyrosine phosphatase, receptor type F",P10586,Enzyme
+Cathepsin A,P10619,Enzyme
+Cytochrome P450 family 2 subfamily C member 8,P10632,Enzyme
+Cytochrome P450 family 2 subfamily D member 6,P10635,Enzyme
+Kit proto-oncogene receptor tyrosine kinase,P10721,Enzyme
+Retinoic acid receptor beta,P10826,Transcription factor
+"Thyroid hormone receptor, alpha",P10827,Transcription factor
+Thyroid hormone receptor beta,P10828,Transcription factor
+Cholinergic receptor muscarinic 1,P11229,Membrane receptor
+"Pim-1 proto-oncogene, serine/threonine kinase",P11309,Enzyme
+Fibroblast growth factor receptor 1,P11362,Enzyme
+Topoisomerase (DNA) I,P11387,Enzyme
+Topoisomerase (DNA) II alpha,P11388,Enzyme
+Glucose-6-phosphate dehydrogenase,P11413,Enzyme
+"Vitamin D (1,25- dihydroxyvitamin D3) receptor",P11473,Transcription factor
+Cytochrome P450 family 2 subfamily A member 6,P11509,Enzyme
+Cytochrome P450 family 19 subfamily A member 1,P11511,Enzyme
+Cholesteryl ester transfer protein,P11597,Ion channel
+Cytochrome P450 family 2 subfamily C member 9,P11712,Enzyme
+"Alcohol dehydrogenase 5 (class III), chi polypeptide",P11766,Enzyme
+Inosine monophosphate dehydrogenase 2,P12268,Enzyme
+Angiotensin I converting enzyme,P12821,Enzyme
+"Src proto-oncogene, non-receptor tyrosine kinase",P12931,Enzyme
+Bone morphogenetic protein 1,P13497,Enzyme
+Retinoic acid receptor gamma,P13631,Transcription factor
+Solute carrier family 5 member 1,P13866,Transporter
+Adrenoceptor beta 3,P13945,Membrane receptor
+"Methylenetetrahydrofolate dehydrogenase (NADP+ dependent) 2, methenyltetrahydrofolate cyclohydrolase",P13995,Enzyme
+Hydroxysteroid 17-beta dehydrogenase 1,P14061,Enzyme
+Macrophage migration inhibitory factor (glycosylation-inhibiting factor),P14174,Enzyme
+Farnesyl diphosphate synthase,P14324,Enzyme
+Dopamine receptor D2,P14416,Membrane receptor
+Aldo-keto reductase family 1 member A1,P14550,Enzyme
+Phospholipase A2 group IIA,P14555,Enzyme
+Insulin degrading enzyme,P14735,Enzyme
+Matrix metallopeptidase 9,P14780,Enzyme
+"Indoleamine 2,3-dioxygenase 1",P14902,Enzyme
+D-amino acid oxidase,P14920,Enzyme
+"B-raf proto-oncogene, serine/threonine kinase",P15056,Enzyme
+Fatty acid binding protein 4,P15090,Auxiliary transport protein
+"Aldo-keto reductase family 1, member B3 (aldose reductase)",P15121,Enzyme
+"Alanyl aminopeptidase, membrane",P15144,Enzyme
+Cytochrome P450 family 11 subfamily B member 1,P15538,Enzyme
+NAD(P)H quinone dehydrogenase 1,P15559,Enzyme
+Arachidonate 15-lipoxygenase,P16050,Enzyme
+"NAD(P)H dehydrogenase, quinone 2",P16083,Enzyme
+Selectin P,P16109,Adhesion
+Platelet derived growth factor receptor alpha,P16234,Enzyme
+O-6-methylguanine-DNA methyltransferase,P16455,Enzyme
+Selectin E,P16581,Adhesion
+UDP glucuronosyltransferase family 2 member B7,P16662,Enzyme
+Protein kinase C alpha,P17252,Enzyme
+"Protein tyrosine phosphatase, non-receptor type 2",P17706,Enzyme
+Tryptophan hydroxylase 1,P17752,Enzyme
+Galectin 3,P17931,Other cytosolic protein
+Fms related tyrosine kinase 1,P17948,Enzyme
+"Protein tyrosine phosphatase, non-receptor type 1",P18031,Enzyme
+"Arachidonate 12-lipoxygenase, 12S type",P18054,Enzyme
+Adrenoceptor alpha 2B,P18089,Membrane receptor
+Steroid 5 alpha-reductase 1,P18405,Enzyme
+"Protein tyrosine phosphatase, receptor type A",P18433,Enzyme
+Adrenoceptor alpha 2C,P18825,Membrane receptor
+Cytochrome P450 family 11 subfamily B member 2,P19099,Enzyme
+Solute carrier family 9 member A1,P19634,Transporter
+Retinoid X receptor alpha,P19793,Transcription factor
+"Amine oxidase, copper containing 1",P19801,Enzyme
+Nuclear factor kappa B subunit 1,P19838,Other cytosolic protein
+Nuclear factor kappa B subunit 1,P19838,Transcription factor
+Thymidine phosphorylase,P19971,Enzyme
+Cholinergic receptor muscarinic 3,P20309,Membrane receptor
+Cytochrome P450 family 2 subfamily B member 6,P20813,Enzyme
+Inosine monophosphate dehydrogenase 1,P20839,Enzyme
+Monoamine oxidase A,P21397,Enzyme
+Tachykinin receptor 2,P21452,Membrane receptor
+Cannabinoid receptor 1,P21554,Membrane receptor
+5'-nucleotidase ecto,P21589,Enzyme
+Dopamine receptor D1,P21728,Membrane receptor
+Complement C5a receptor 1,P21730,Membrane receptor
+Thromboxane A2 receptor,P21731,Membrane receptor
+Dopamine receptor D4,P21917,Membrane receptor
+Dopamine receptor D5,P21918,Membrane receptor
+Catechol-O-methyltransferase,P21964,Enzyme
+Transglutaminase 2,P21980,Enzyme
+Potassium voltage-gated channel subfamily A member 3,P22001,Ion channel
+Acetylcholinesterase (cartwright blood group),P22303,Enzyme
+UDP glucuronosyltransferase family 1 member A1,P22309,Enzyme
+NME/NM23 nucleoside diphosphate kinase 2,P22392,Enzyme
+Ectonucleotide pyrophosphatase/phosphodiesterase 1,P22413,Enzyme
+Fibroblast growth factor receptor 4,P22455,Enzyme
+"Potassium voltage-gated channel, shaker-related subfamily, member 5",P22460,Ion channel
+Fibroblast growth factor receptor 3,P22607,Enzyme
+Transglutaminase 1,P22735,Enzyme
+Carbonic anhydrase 4,P22748,Enzyme
+Matrix metallopeptidase 8,P22894,Enzyme
+"Xpa, DNA damage recognition and repair factor",P23025,Other nuclear protein
+Carboxylesterase 1,P23141,Enzyme
+Prostaglandin-endoperoxide synthase 1,P23219,Enzyme
+Carbonic anhydrase 6,P23280,Enzyme
+Janus kinase 1,P23458,Enzyme
+Janus kinase 1,P23458,Enzyme
+"Protein tyrosine phosphatase, receptor type B",P23467,Enzyme
+"Protein tyrosine phosphatase, receptor type E",P23469,Enzyme
+Adenosylhomocysteinase,P23526,Enzyme
+Diacylglycerol kinase alpha,P23743,Enzyme
+Follicle stimulating hormone receptor,P23945,Membrane receptor
+Chymase 1,P23946,Enzyme
+Solute carrier family 6 member 2,P23975,Transporter
+Endothelin receptor type B,P24530,Membrane receptor
+Thromboxane A synthase 1,P24557,Enzyme
+Protein kinase C eta,P24723,Enzyme
+Cyclin dependent kinase 2,P24941,Enzyme
+C-X-C motif chemokine receptor 1,P25024,Membrane receptor
+C-X-C motif chemokine receptor 2,P25025,Membrane receptor
+G protein-coupled receptor kinase 2,P25098,Enzyme
+Endothelin receptor type A,P25101,Membrane receptor
+Tachykinin receptor 1,P25103,Membrane receptor
+Platelet activating factor receptor,P25105,Membrane receptor
+Atypical chemokine receptor 3,P25106,Membrane receptor
+Coagulation factor II thrombin receptor,P25116,Membrane receptor
+Cathepsin S,P25774,Enzyme
+Neuropeptide Y receptor Y1,P25929,Membrane receptor
+DNA methyltransferase 1,P26358,Epigenetic regulator
+Monoamine oxidase B,P27338,Enzyme
+Dipeptidyl peptidase 4,P27487,Enzyme
+Apurinic/apyrimidinic endodeoxyribonuclease 1,P27695,Enzyme
+Phosphodiesterase 4A,P27815,Enzyme
+"Constitutive 20S proteasome subunit, beta type, 5C",P28062,Enzyme
+5-hydroxytryptamine receptor 1D,P28221,Membrane receptor
+5-hydroxytryptamine receptor 2C,P28335,Membrane receptor
+5-hydroxytryptamine receptor 2A,P08238,Membrane receptor
+Mitogen-activated protein kinase 1,P28482,Enzyme
+Hydroxysteroid 11-beta dehydrogenase 1,P28845,Enzyme
+CD38 molecule,P28907,Enzyme
+Adenosine A2A receptor,P29274,Membrane receptor
+Adenosine A2B receptor,P29275,Membrane receptor
+"Protein tyrosine phosphatase, non-receptor type 6",P29350,Enzyme
+Tachykinin receptor 3,P29371,Membrane receptor
+Caspase 1,P29466,Enzyme
+Nitric oxide synthase 3,P29474,Enzyme
+Nitric oxide synthase 1,P29475,Enzyme
+Wee1 G2 checkpoint kinase,P30291,Enzyme
+Cell division cycle 25A,P30304,Enzyme
+Cell division cycle 25B,P30305,Enzyme
+Cell division cycle 25C,P30307,Enzyme
+Bradykinin receptor B2,P30411,Membrane receptor
+N-myristoyltransferase 1,P30419,Enzyme
+Arginine vasopressin receptor 2,P30518,Membrane receptor
+AXL receptor tyrosine kinase,P30530,Enzyme
+Adenosine A1 receptor,P30542,Membrane receptor
+Angiotensin II receptor type 1,P30556,Membrane receptor
+Oxytocin receptor,P30559,Membrane receptor
+Aldehyde dehydrogenase 3 family member A1,P30838,Enzyme
+Somatostatin receptor 1,P30872,Membrane receptor
+Somatostatin receptor 2,P30874,Membrane receptor
+Gonadotropin releasing hormone receptor,P30968,Membrane receptor
+Neurotensin receptor 1,P30989,Membrane receptor
+Steroid 5 alpha-reductase 2,P31213,Enzyme
+Somatostatin receptor 4,P31391,Membrane receptor
+Solute carrier family 5 member 2,P31639,Transporter
+Solute carrier family 6 member 4,P31645,Transporter
+AKT serine/threonine kinase 1,P31749,Enzyme
+AKT serine/threonine kinase 2,P31751,Enzyme
+Cholecystokinin A receptor,P32238,Membrane receptor
+Cholecystokinin B receptor,P32239,Membrane receptor
+Melanocortin 4 receptor,P32245,Membrane receptor
+C-C motif chemokine receptor 1,P32246,Membrane receptor
+Melanocortin 5 receptor,P33032,Membrane receptor
+Cytochrome P450 family 2 subfamily C member 19,P33261,Enzyme
+Deoxyuridine triphosphatase,P33316,Enzyme
+Ttk protein kinase,P33981,Enzyme
+Epoxide hydrolase 2,P34913,Enzyme
+5-hydroxytryptamine receptor 7,P34969,Membrane receptor
+Cannabinoid receptor 2,P34972,Membrane receptor
+Prostaglandin E receptor 1,P34995,Membrane receptor
+Corticotropin releasing hormone receptor 1,P34998,Membrane receptor
+Carbonic anhydrase 5a,P35218,Enzyme
+Nitric oxide synthase 2,P35228,Enzyme
+"Sepiapterin reductase (7,8-dihydrobiopterin:nadp+ oxidoreductase)",P35270,Enzyme
+Somatostatin receptor 5,P35346,Membrane receptor
+Adrenoceptor alpha 1A,P35348,Membrane receptor
+Prostaglandin-endoperoxide synthase 2,P35354,Enzyme
+Histamine receptor H1,P35367,Membrane receptor
+Adrenoceptor alpha 1B,P35368,Membrane receptor
+Opioid receptor mu 1,P35372,Membrane receptor
+Prostaglandin E receptor 4,P35408,Membrane receptor
+Dopamine receptor D3,P35462,Membrane receptor
+Sodium voltage-gated channel alpha subunit 1,P35498,Ion channel
+Sodium voltage-gated channel alpha subunit 4,P35499,Ion channel
+Glucokinase,P35557,Enzyme
+Sterol O-acyltransferase 1,P35610,Enzyme
+Choline kinase alpha,P35790,Enzyme
+Fms related tyrosine kinase 4,P35916,Enzyme
+Kinase insert domain receptor,P35968,Enzyme
+Mitogen-activated protein kinase kinase 2,P36507,Enzyme
+Cholinergic receptor nicotinic alpha 7 subunit,P36544,Ion channel
+Nudix hydrolase 1,P36639,Enzyme
+Fms related tyrosine kinase 3,P36888,Enzyme
+Bone morphogenetic protein receptor type 1A,P36894,Enzyme
+Activin A receptor type 1B,P36896,Enzyme
+Transforming growth factor beta receptor 1,P36897,Enzyme
+Hydroxysteroid 17-beta dehydrogenase 3,P37058,Enzyme
+Hydroxysteroid 17-beta dehydrogenase 2,P37059,Enzyme
+Peroxisome proliferator activated receptor gamma,P37231,Transcription factor
+Farnesyl-diphosphate farnesyltransferase 1,P37268,Enzyme
+Arginine vasopressin receptor 1A,P37288,Membrane receptor
+Synuclein alpha,P37840,Unclassified protein
+Matrix metallopeptidase 12,P39900,Enzyme
+Nicotinamide N-methyltransferase,P40261,Enzyme
+Opioid receptor delta 1,P41143,Membrane receptor
+Opioid receptor kappa 1,P41145,Membrane receptor
+Opioid related nociceptin receptor 1,P41146,Membrane receptor
+Calcium-sensing receptor,P41180,Membrane receptor
+B-cell cll/lymphoma 6,P41182,Transcription factor
+Prostaglandin D2 synthase,P41222,Enzyme
+Mitogen-activated protein kinase kinase kinase 8,P41279,Enzyme
+Glutamate metabotropic receptor 5,P41594,Membrane receptor
+5-hydroxytryptamine receptor 2B,P41595,Membrane receptor
+C-C motif chemokine receptor 2,P41597,Membrane receptor
+Melanocortin 3 receptor,P41968,Membrane receptor
+"Aldo-keto reductase family 1, member C3",P42330,Enzyme
+"Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha",P42336,Enzyme
+"Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit beta",P42338,Enzyme
+Mechanistic target of rapamycin,P42345,Enzyme
+Caspase 3,P42574,Enzyme
+Endothelin converting enzyme 1,P42892,Enzyme
+Solute carrier family 1 member 3,P43003,Transporter
+Solute carrier family 1 member 2,P43004,Transporter
+Prostaglandin E receptor 3,P43115,Membrane receptor
+Prostaglandin E receptor 2,P43116,Membrane receptor
+Prostaglandin I2 (prostacyclin) receptor (Ip),P43119,Membrane receptor
+Carbonic anhydrase 7,P43166,Enzyme
+Glucagon like peptide 1 receptor,P43220,Membrane receptor
+Cathepsin K,P43235,Enzyme
+"Protein tyrosine phosphatase, non-receptor type 9",P43378,Enzyme
+Zeta-chain (TCR) associated protein kinase 70kDa,P43403,Enzyme
+Spleen associated tyrosine kinase,P43405,Enzyme
+Nicotinamide phosphoribosyltransferase,P43490,Enzyme
+Matrix metallopeptidase 13,P45452,Enzyme
+Mitogen-activated protein kinase 8,P45983,Enzyme
+Mitogen-activated protein kinase 9,P45984,Enzyme
+5-hydroxytryptamine receptor 3A,P46098,Ion channel
+Phospholipase A2 group IVA,P47712,Enzyme
+Glucagon receptor,P47871,Membrane receptor
+Purinergic receptor P2Y1,P47900,Membrane receptor
+Arginine vasopressin receptor 1B,P47901,Membrane receptor
+Xanthine dehydrogenase,P47989,Enzyme
+Potassium voltage-gated channel subfamily J member 1,P48048,Ion channel
+Solute carrier family 6 member 12,P48065,Transporter
+Solute carrier family 6 member 9,P48067,Transporter
+Prolyl endopeptidase,P48147,Enzyme
+"Lanosterol synthase (2,3-oxidosqualene-lanosterol cyclase)",P48449,Enzyme
+Casein kinase 1 delta,P48730,Enzyme
+"Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit gamma",P48736,Enzyme
+"Tryptophan 2,3-dioxygenase",P48775,Enzyme
+Mitogen-activated protein kinase-activated protein kinase 2,P49137,Enzyme
+Neuropeptide Y receptor Y2,P49146,Membrane receptor
+Fatty acid synthase,P49327,Enzyme
+Protein geranylgeranyltransferase-I,P49354,Enzyme
+Casein kinase 1 epsilon,P49674,Enzyme
+C-X-C motif chemokine receptor 3,P49682,Membrane receptor
+CDC like kinase 1,P49759,Enzyme
+Glycogen synthase kinase 3 alpha,P49840,Enzyme
+Glycogen synthase kinase 3 beta,P49841,Enzyme
+Kallikrein related peptidase 7,P49862,Enzyme
+Angiotensin II receptor type 2,P50052,Membrane receptor
+Ketohexokinase,P50053,Enzyme
+Matrix metallopeptidase 14,P50281,Enzyme
+5-hydroxytryptamine receptor 6,P50406,Membrane receptor
+Methionyl aminopeptidase 2,P50579,Enzyme
+Cyclin dependent kinase 9,P50750,Enzyme
+Rar related orphan receptor C,P51449,Transcription factor
+Dual specificity phosphatase 3,P51452,Enzyme
+Matrix metallopeptidase 16,P51512,Enzyme
+"Swi/snf related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 2",P51531,Epigenetic regulator
+"SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily A, member 4",P51532,Epigenetic regulator
+Galactokinase 1,P51570,Enzyme
+C-C motif chemokine receptor 3,P51677,Membrane receptor
+C-C motif chemokine receptor 4,P51679,Membrane receptor
+Chemokine (C-C motif) receptor 5,P51681,Membrane receptor
+Janus kinase 3,P52333,Enzyme
+Janus kinase 3,P52333,Enzyme
+Kinesin family member 11,P52732,Other cytosolic protein
+Hexokinase 2,P52789,Enzyme
+Aldo-keto reductase family 1 member C2,P52895,Enzyme
+Polo like kinase 1,P53350,Enzyme
+Methionyl aminopeptidase 1,P53582,Enzyme
+Cathepsin C,P53634,Enzyme
+Mitogen-activated protein kinase 10,P53779,Enzyme
+Protein kinase AMP-activated catalytic subunit alpha 2,P54646,Enzyme
+EPH receptor B4,P54760,Enzyme
+"Protein tyrosine phosphatase, non-receptor type 5",P54829,Enzyme
+Nuclear receptor subfamily 1 group H member 2,P55055,Transcription factor
+Valosin containing protein,P55072,Transporter
+Caspase 7,P55210,Enzyme
+Caspase 6,P55212,Enzyme
+Fc fragment of IgG receptor and transporter,P55899,Unclassified protein
+Purinergic receptor P2X 3,P56373,Ion channel
+Histone deacetylase 4,P56524,Epigenetic regulator
+"Protease, serine 12",P56730,Enzyme
+Beta-secretase 1,P56817,Enzyme
+C-X-C motif chemokine receptor 4,P61073,Membrane receptor
+WD repeat domain 5,P61964,Other nuclear protein
+Peptidylprolyl isomerase A,P62937,Enzyme
+FK506 binding protein 1a,P62942,Enzyme
+Casein kinase 2 alpha 1,P68400,Enzyme
+Cytochrome P450 family 4 subfamily F member 2,P78329,Enzyme
+Discs large maguk scaffold protein 4,P78352,Unclassified protein
+"Protein kinase, DNA-activated, catalytic polypeptide",P78527,Enzyme
+ADAM metallopeptidase domain 17,P78536,Enzyme
+Arginase,P78540,Enzyme
+Hydroxysteroid 11-beta dehydrogenase 2,P80365,Enzyme
+X-linked inhibitor of apoptosis,P98170,Other cytosolic protein
+Cyclin dependent kinase 5,Q00535,Enzyme
+Calcium voltage-gated channel subunit alpha1 B,Q00975,Ion channel
+MDM2 proto-oncogene,Q00987,Other nuclear protein
+Phosphodiesterase 1B,Q01064,Enzyme
+Fatty acid binding protein 5,Q01469,Auxiliary transport protein
+Solute carrier family 7 member 5,Q01650,Transporter
+Melanocortin 1 receptor,Q01726,Membrane receptor
+Solute carrier family 6 member 3,Q01959,Transporter
+N-acylethanolamine acid amidase,Q02083,Enzyme
+Dihydroorotate dehydrogenase (quinone),Q02127,Enzyme
+Protein kinase C epsilon,Q02156,Enzyme
+Mitogen-activated protein kinase kinase 1,Q02750,Enzyme
+Tek receptor tyrosine kinase,Q02763,Enzyme
+Cytochrome P450 family 4 subfamily A member 11,Q02928,Enzyme
+Peroxisome proliferator activated receptor delta,Q03181,Transcription factor
+Folate hydrolase 1,Q04609,Enzyme
+Protein kinase C theta,Q04759,Enzyme
+Glyoxalase I,Q04760,Enzyme
+Macrophage stimulating 1 receptor,Q04912,Enzyme
+Protein tyrosine kinase 2,Q05397,Enzyme
+"Lipase e, hormone sensitive type",Q05469,Enzyme
+Protein kinase C zeta,Q05513,Enzyme
+Protein kinase C delta,Q05655,Enzyme
+Solute carrier family 18 member A2,Q05940,Transporter
+"Protein tyrosine phosphatase, non-receptor type 11",Q06124,Enzyme
+Bruton tyrosine kinase,Q06187,Enzyme
+Phosphodiesterase 4B,Q07343,Enzyme
+BCL2 like 1,Q07817,Ion channel
+Myeloid cell leukemia sequence 1 (BCL2-related),Q07820,Other cytosolic protein
+Peroxisome proliferator activated receptor alpha,Q07869,Transcription factor
+Sos ras/rac guanine nucleotide exchange factor 1,Q07889,Unclassified protein
+Phosphodiesterase 4C,Q08493,Enzyme
+Phosphodiesterase 4D,Q08499,Enzyme
+IL2 inducible T-cell kinase,Q08881,Enzyme
+"Potassium large conductance calcium-activated channel, subfamily m, alpha member 1",Q12791,Ion channel
+Potassium voltage-gated channel subfamily H member 2,Q12809,Ion channel
+Fibroblast activation protein alpha,Q12884,Enzyme
+Solute carrier family 10 member 2,Q12908,Transporter
+Acetyl-CoA carboxylase alpha,Q13085,Enzyme
+Phospholipase A2 group VII,Q13093,Enzyme
+Protein kinase AMP-activated catalytic subunit alpha 1,Q13131,Enzyme
+Nuclear receptor subfamily 1 group H member 3,Q13133,Transcription factor
+P21 (RAC1) activated kinase 1,Q13153,Enzyme
+Mitogen-activated protein kinase 7,Q13164,Enzyme
+Chitinase 1,Q13231,Enzyme
+Glutamate metabotropic receptor 1,Q13255,Membrane receptor
+Prostaglandin D2 receptor,Q13258,Membrane receptor
+ATM serine/threonine kinase,Q13315,Enzyme
+"Protein tyrosine phosphatase, receptor type S",Q13332,Enzyme
+Phosphodiesterase 3B,Q13370,Enzyme
+Rho associated coiled-coil containing protein kinase 1,Q13464,Enzyme
+"Peptidylprolyl cis/trans isomerase, NIMA-interacting 1",Q13526,Enzyme
+ATR serine/threonine kinase,Q13535,Enzyme
+Receptor interacting serine/threonine kinase 1,Q13546,Enzyme
+Histone deacetylase 1,Q13547,Epigenetic regulator
+Dag kinase zeta,Q13574,Enzyme
+Dual specificity tyrosine phosphorylation regulated kinase 1A,Q13627,Enzyme
+5-hydroxytryptamine receptor 4,Q13639,Membrane receptor
+Ectonucleotide pyrophosphatase/phosphodiesterase 2,Q13822,Enzyme
+Phosphodiesterase 7A,Q13946,Enzyme
+Phosphodiesterase 1C,Q14123,Enzyme
+Glutamate metabotropic receptor 2,Q14416,Membrane receptor
+Phosphodiesterase 3A,Q14432,Enzyme
+Sodium voltage-gated channel alpha subunit 5,Q14524,Ion channel
+Solute carrier family 29 member 2,Q14542,Transporter
+Caspase 8,Q14790,Enzyme
+Nuclear receptor subfamily 1 group I member 3,Q14994,Transcription factor
+Pyruvate dehydrogenase kinase 1,Q15118,Enzyme
+Pyruvate dehydrogenase kinase 2,Q15119,Enzyme
+Erb-b2 receptor tyrosine kinase 4,Q15303,Enzyme
+Purinergic receptor P2Y14,Q15391,Membrane receptor
+Leukotriene B4 receptor,Q15722,Membrane receptor
+Neuropeptide Y receptor Y5,Q15761,Membrane receptor
+Sodium voltage-gated channel alpha subunit 9,Q15858,Ion channel
+Enhancer of zeste 2 polycomb repressive complex 2 subunit,Q15910,Epigenetic regulator
+Protein kinase N2,Q16513,Enzyme
+Mitogen-activated protein kinase 14,Q16539,Enzyme
+Complement C3a receptor 1,Q16581,Membrane receptor
+Calcitonin receptor like receptor,Q16602,Membrane receptor
+Cytochrome P450 family 1 subfamily B member 1,Q16678,Enzyme
+Glutaminyl-peptide cyclotransferase,Q16769,Enzyme
+Carbonic anhydrase 9,Q16790,Enzyme
+Meprin A subunit alpha,Q16819,Enzyme
+Meprin A subunit beta,Q16820,Enzyme
+Discoidin domain receptor tyrosine kinase 2,Q16832,Enzyme
+"Amine oxidase, copper containing 3",Q16853,Enzyme
+Leukotriene C4 synthase,Q16873,Enzyme
+"6-phosphofructo-2-kinase/fructose-2,6-biphosphatase 3",Q16875,Enzyme
+Thioredoxin reductase 1,Q16881,Enzyme
+TNNI3 interacting kinase,Q59H18,Enzyme
+Leucine rich repeat kinase 2,Q5S007,Enzyme
+Dipeptidyl peptidase 8,Q6V1X1,Enzyme
+"Indoleamine 2,3-dioxygenase 2",Q6ZQW0,Enzyme
+Ubiquitin specific peptidase 30,Q70CQ3,Enzyme
+Transient receptor potential cation channel subfamily M member 8,Q7Z2W7,Ion channel
+Stearoyl-CoA desaturase 5,Q86SK9,Enzyme
+Dipeptidyl peptidase 9,Q86TI2,Enzyme
+"Pim-3 proto-oncogene, serine/threonine kinase",Q86V86,Enzyme
+Poly(ADP-ribose) glycohydrolase,Q86W56,Enzyme
+Transmembrane protein 173,Q86WV6,Unclassified protein
+Coactivator associated arginine methyltransferase 1,Q86X55,Epigenetic regulator
+Solute carrier family 13 member 5,Q86YT5,Transporter
+"Transmembrane protease, serine 6",Q8IU80,Enzyme
+Sirtuin 2,Q8IXJ6,Epigenetic regulator
+Carbonic anhydrase 13,Q8N1Q1,Enzyme
+Proprotein convertase subtilisin/kexin type 9,Q8NBP7,Enzyme
+Phosphatidylinositol 3-kinase catalytic subunit type 3,Q8NEB9,Enzyme
+Transient receptor potential cation channel subfamily V member 1,Q8NER1,Ion channel
+Transient receptor potential cation channel subfamily V member 3,Q8NET8,Ion channel
+Hydroxycarboxylic acid receptor 2,Q8TDS4,Membrane receptor
+Taste 1 receptor member 2,Q8TE23,Membrane receptor
+Dot1 like histone lysine methyltransferase,Q8TEK3,Epigenetic regulator
+"Germ cell associated 2, haspin",Q8TF76,Enzyme
+Histone deacetylase 7,Q8WUI4,Epigenetic regulator
+Estrogen receptor 2,Q92731,Transcription factor
+Histone deacetylase 2,Q92769,Epigenetic regulator
+Lysine acetyltransferase 6A,Q92794,Enzyme
+Lysine acetyltransferase 2B,Q92831,Epigenetic regulator
+Lysine acetyltransferase 2B,Q92831,Epigenetic regulator
+Growth hormone secretagogue receptor,Q92847,Membrane receptor
+Lysine acetyltransferase 5,Q92993,Epigenetic regulator
+Lysine acetyltransferase 5,Q92993,Epigenetic regulator
+Ubiquitin specific peptidase 7,Q93009,Enzyme
+Histone deacetylase 10,Q969S8,Epigenetic regulator
+Histone deacetylase 11,Q96DB2,Epigenetic regulator
+Sirtuin 1,Q96EB6,Epigenetic regulator
+Aurora kinase B,Q96GD4,Enzyme
+Carboxypeptidase B2,Q96IY4,Enzyme
+Euchromatic histone lysine methyltransferase 2,Q96KQ7,Epigenetic regulator
+Protein arginine methyltransferase 6,Q96LA8,Epigenetic regulator
+NLR family pyrin domain containing 3,Q96P20,Unclassified protein
+Diacylglycerol O-acyltransferase 2,Q96PD7,Enzyme
+"SMG1, nonsense mediated mrna decay associated pi3k related kinase",Q96Q15,Enzyme
+Nuclear receptor subfamily 1 group H member 4,Q96RI1,Transcription factor
+Solute carrier family 22 member 12,Q96S37,Transporter
+Membrane bound O-acyltransferase domain containing 4,Q96T53,Enzyme
+Sodium voltage-gated channel alpha subunit 2,Q99250,Ion channel
+Sphingosine-1-phosphate receptor 3,Q99500,Membrane receptor
+Mitogen-activated protein kinase kinase kinase 14,Q99558,Enzyme
+Purinergic receptor P2X 7,Q99572,Ion channel
+Mitogen-activated protein kinase kinase kinase 5,Q99683,Enzyme
+Monoglyceride lipase,Q99685,Enzyme
+Melanin concentrating hormone receptor 1,Q99705,Membrane receptor
+"Smoothened, frizzled class receptor",Q99835,Membrane receptor
+Protein arginine methyltransferase 1,Q99873,Epigenetic regulator
+Chymotrypsin C,Q99895,Enzyme
+MAP kinase interacting serine/threonine kinase 1,Q9BUB5,Enzyme
+Histone deacetylase 8,Q9BY41,Epigenetic regulator
+Serine/threonine kinase 33,Q9BYT3,Enzyme
+"Chitinase, acidic",Q9BZP6,Enzyme
+Egl-9 family hypoxia inducible factor 1,Q9GZT9,Enzyme
+Purinergic receptor P2Y12,Q9H244,Membrane receptor
+Tankyrase 2,Q9H2K2,Enzyme
+Histamine receptor H4,Q9H3N8,Membrane receptor
+Egl-9 family hypoxia inducible factor 3,Q9H6Z9,Enzyme
+Set and mynd domain containing 3,Q9H7B4,Epigenetic regulator
+Pantothenate kinase 3,Q9H999,Enzyme
+Peptide deformylase (mitochondrial),Q9HBH1,Enzyme
+Phosphodiesterase 11A,Q9HCR9,Enzyme
+Phosphodiesterase 7B,Q9NP56,Enzyme
+Solute carrier family 40 member 1,Q9NP59,Transporter
+NADPH oxidase 4,Q9NPH5,Enzyme
+Histone-lysine N-methyltransferase PRDM9,Q9NQV7,Epigenetic regulator
+Histone-lysine N-methyltransferase PRDM9,Q9NQV7,Epigenetic regulator
+Sphingosine kinase 2,Q9NRA0,Enzyme
+Set and mynd domain containing 2,Q9NRG4,Epigenetic regulator
+Catenin beta interacting protein 1,Q9NSA3,Unclassified protein
+Sirtuin 3,Q9NTG7,Epigenetic regulator
+Tyrosyl-DNA phosphodiesterase 1,Q9NUW8,Enzyme
+Interleukin 1 receptor associated kinase 4,Q9NWZ3,Enzyme
+Sirtuin 5,Q9NXA8,Epigenetic regulator
+Sodium voltage-gated channel alpha subunit 3,Q9NY46,Ion channel
+Sphingosine kinase 1,Q9NYA1,Enzyme
+Taste 2 receptor member 14,Q9NYV8,Membrane receptor
+CDGSH iron sulfur domain 1,Q9NZ45,Unclassified protein
+CD274 molecule,Q9NZQ7,Unclassified protein
+Calcium voltage-gated channel subunit alpha1 I,Q9P0X4,Ion channel
+"Pim-2 proto-oncogene, serine/threonine kinase",Q9P1W9,Enzyme
+Histone deacetylase 6,Q9UBN7,Epigenetic regulator
+Malt1 paracaspase,Q9UDY8,Enzyme
+Poly(ADP-ribose) polymerase 2,Q9UGN5,Enzyme
+NPC1 like intracellular cholesterol transporter 1,Q9UHC9,Other membrane protein
+TANK binding kinase 1,Q9UHD2,Enzyme
+Dipeptidyl peptidase 7,Q9UHL4,Enzyme
+Leucyl and cystinyl aminopeptidase,Q9UIQ6,Enzyme
+Nudix hydrolase 5,Q9UKK9,Enzyme
+Histone deacetylase 9,Q9UKV0,Epigenetic regulator
+Carbonic anhydrase 14,Q9ULX7,Enzyme
+Matrix metallopeptidase 17,Q9ULZ9,Enzyme
+Peptidyl arginine deiminase 4,Q9UM07,Enzyme
+ALK receptor tyrosine kinase,Q9UM73,Enzyme
+ADAM metallopeptidase with thrombospondin type 1 motif 5,Q9UNA0,Enzyme
+Chymotrypsin like elastase family member 1,Q9UNI1,Enzyme
+Phospholipase A2 group IID,Q9UNK4,Enzyme
+ATP binding cassette subfamily G member 2 (junior blood group),Q9UNQ0,Transporter
+Neuraminidase 3,Q9UQ49,Enzyme
+Sodium voltage-gated channel alpha subunit 8,Q9UQD0,Ion channel
+Histone deacetylase 5,Q9UQL6,Epigenetic regulator
+Phosphodiesterase 10A,Q9Y233,Enzyme
+AKT serine/threonine kinase 3,Q9Y243,Enzyme
+Heparanase,Q9Y251,Enzyme
+Carbonic anhydrase 5b,Q9Y2D0,Enzyme
+Kallikrein related peptidase 5,Q9Y337,Enzyme
+Solute carrier family 6 member 5,Q9Y345,Transporter
+Neuraminidase 2,Q9Y3R4,Enzyme
+Histamine receptor H3,Q9Y5N1,Membrane receptor
+Neuropeptide FF receptor 2,Q9Y5X5,Membrane receptor
+"Lipase G, endothelial type",Q9Y5X9,Enzyme
+Prostaglandin D2 receptor 2,Q9Y5Y4,Membrane receptor
+Suppression of tumorigenicity 14,Q9Y5Y6,Enzyme
+Sodium voltage-gated channel alpha subunit 10,Q9Y5Y9,Ion channel
+Beta-site APP-cleaving enzyme 2,Q9Y5Z0,Enzyme

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content />
+        <meta name="author" content />
+        <link rel="shortcut icon" href="/static/img/logo.ico">
+        
+        {% block head %}
+        <title>CODD-Pred</title>
+        {% endblock %}
+
+        <!-- Favicon-->
+        <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> -->
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'main/css/styles.css') }}" >
+
+        <style>
+            .nav-font
+            {
+                font-size:18px
+            }
+        </style>
+
+    </head>
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" style="font-family:Engravers MT, Times, Serif; font-size: 1.8rem;"  href="/">CODD-Pred</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a id="nav_home" class="nav-link nav-font" href="/">Home</a></li>
+                            <li class="nav-item"><a id="nav_target_prediction" class="nav-link nav-font" href="/works/target_prediction">Target Prediction</a></li>
+                            <li class="nav-item"><a id="nav_bioactivity_prediction" class="nav-link nav-font" href="/works/bioactivity_prediction">Bioactivity Prediction</a></li>
+                            <li class="nav-item"><a id="nav_model_info" class="nav-link nav-font" href="/model_info">Model Info</a></li>
+                            <li class="nav-item"><a id="nav_explanation" class="nav-link nav-font" href="/explanation">Explanation</a></li>
+                            <li class="nav-item"><a id="nav_contact" class="nav-link nav-font" href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            {% block content %}
+            {% endblock %}
+
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="text-center">
+                    <a href="https://www.revolvermaps.com/livestats/5pvbs56v9lh/"><img src="//rf.revolvermaps.com/h/m/a/0/ff0000/128/0/5pvbs56v9lh.png" width="256" height="128" alt="Map" style="border:0;"></a> 
+                    <br/>
+                    <div class="small text-white">
+                        <strong>Statistics</strong>
+                    </div>
+                    <br/>
+                </div>
+                <div class="small m-0 text-white text-center">
+                    Copyright @ 2022, All rights reserved. <br/>
+                    CODD-pred, Macau University of Science and Technology.   
+                    <br/>
+                </div>
+
+                <div style="width:300px;margin:0 auto; padding:20px 0;" class="text-center">
+                    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=53052202000294" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/static/img/备案图标.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">滇公网安备 53052202000294号</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        {% block js %}
+
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,930 @@
+{
+    "COCCNC(=O)c1cc(S(N)(=O)=O)c(Cl)cc1NC1CCCCC1": [
+        "Carbonic anhydrase 13",
+        "Carbonic anhydrase 14",
+        "Carbonic anhydrase 2",
+        "Carbonic anhydrase 12"
+    ],
+    "CN1CCNc2nc(CCOc3cc(CC(CC(=O)O)c4ccc5c(c4)OCO5)nn3C)ccc21": [
+        "Integrin alphaV beta8",
+        "Integrin subunit alpha V/beta 3"
+    ],
+    "CCN1CCC(Oc2ccc(C(=O)Nc3ccc(NC(=O)Nc4cc(C(C)(C)C)on4)cc3)nc2)CC1": [
+        "Colony stimulating factor 1 receptor",
+        "Fms related tyrosine kinase 3",
+        "Kit proto-oncogene receptor tyrosine kinase"
+    ],
+    "CC(C)(C)c1ccc(CN2[C@@H]3CC[C@@H]2CC(c2cccc(O)c2)C3)cc1": [
+        "Opioid receptor mu 1",
+        "Opioid receptor delta 1"
+    ],
+    "CNC(=O)[C@@H](Cc1ccc2ccccc2c1)NC(=O)[C@@H](CC(=O)NO)CC(C)C": [
+        "Matrix metallopeptidase 9",
+        "Matrix metallopeptidase 2"
+    ],
+    "O=C(O)CC(Cc1cc(OCCCNC2=NCCN2)no1)c1ccc2c(c1)OCO2": [
+        "Integrin alphaV beta8",
+        "Integrin subunit alpha V/beta 3"
+    ],
+    "CC(C)C[C@H](CC(=O)NO)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)NCc1ccccn1": [
+        "Matrix metallopeptidase 8",
+        "Matrix metallopeptidase 9",
+        "Matrix metallopeptidase 2"
+    ],
+    "CN(Cc1ccc(C(C)(C)C)cc1)C1CCN(C(=O)Cn2cc(NC(=O)c3cnn4cccnc34)c(-c3cc(Cl)ccc3OC(F)F)n2)CC1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "CNC(=O)CN1CCN(C(=O)Cn2cc(NC(=O)c3cnn4cccnc34)c(-c3cc(Cl)ccc3OC(F)F)n2)CC1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "N#CC1(c2ccccc2)CCN(C(=O)Cn2cc(NC(=O)c3cnn4cccnc34)c(-c3cc(Cl)ccc3OC(F)F)n2)CC1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "NS(=O)(=O)c1cc(C(=O)NCCCC(=O)O)c(Cl)cc1Cl": [
+        "Carbonic anhydrase 2",
+        "Carbonic anhydrase 4",
+        "Carbonic anhydrase 7",
+        "Carbonic anhydrase 12",
+        "Carbonic anhydrase 14"
+    ],
+    "NS(=O)(=O)c1ccc(CCn2c(=S)[nH]c3ccccc3c2=O)cc1": [
+        "Carbonic anhydrase 2",
+        "Carbonic anhydrase 12"
+    ],
+    "Cc1cncc(-c2ccc3cnn(-c4cccc(N5CCCNCC5)n4)c3c2)n1": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "Cc1ccc2c(N3CCN(CCc4cccc(NC(=O)c5cccc(F)c5)c4)CC3)cccc2n1": [
+        "5-hydroxytryptamine receptor 1A",
+        "5-hydroxytryptamine receptor 1D"
+    ],
+    "O=C1c2ccccc2C(=O)N1CCCCN1CC=C(c2c[nH]c3ccc(F)cc23)CC1": [
+        "Solute carrier family 6 member 4",
+        "Dopamine receptor D3"
+    ],
+    "Cc1cccc2nc(C(=O)C3(CCC(C)(C)C)CCNC3)ccc12": [
+        "Solute carrier family 6 member 4",
+        "Solute carrier family 6 member 2"
+    ],
+    "CCOC(=O)CCCN1CCC(n2cc(NC(=O)c3c(N)nn4cccnc34)c(-c3cc(Cl)ccc3OC(F)F)n2)CC1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "CCCCNC(=O)c1cc(S(N)(=O)=O)c(Cl)cc1NC1CCCCCCC1": [
+        "Carbonic anhydrase 9",
+        "Carbonic anhydrase 14",
+        "Carbonic anhydrase 2",
+        "Carbonic anhydrase 12"
+    ],
+    "Cc1cncc(-c2cc3c(cnn3-c3cccc(N4CCNCC4)n3)nn2)n1": [
+        "Pim-2 proto-oncogene, serine/threonine kinase",
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "CO[C@@H]1[C@@H](C)C[C@@H](c2ccncc2NC(=O)c2nc(-c3c(F)cccc3F)c(F)cc2N)C[C@H]1N": [
+        "Pim-2 proto-oncogene, serine/threonine kinase",
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "CC(C)OC[C@H]1[C@@H]2CNC[C@@]21c1ccc(Cl)c(Cl)c1": [
+        "Solute carrier family 6 member 4",
+        "Solute carrier family 6 member 2"
+    ],
+    "Cc1ccc2c(N3CCN(CCc4cccc(NC(=O)c5cnccn5)c4)CC3)cccc2n1": [
+        "5-hydroxytryptamine receptor 1A",
+        "5-hydroxytryptamine receptor 1D"
+    ],
+    "COC(=O)[C@H]1[C@@H](c2ccc(Cl)c(C)c2)C[C@H]2CC[C@H]1N2C.Cl": [
+        "Solute carrier family 6 member 3",
+        "Solute carrier family 6 member 4"
+    ],
+    "COc1cccn2c(=O)c(CCN3CCc4oc5ccccc5c4C3)c(C)nc12": [
+        "Adrenoceptor alpha 2A",
+        "Adrenoceptor alpha 2C"
+    ],
+    "Cc1cc(C)c(S(=O)(=O)N[C@@H](CNC(=O)c2ccc(-c3cccc(NC(=N)N)c3)s2)C(=O)O)c(C)c1.O=C(O)C(F)(F)F": [
+        "Integrin alphaV beta8",
+        "Integrin subunit alpha V/beta 3"
+    ],
+    "Cn1ncc(NC(=O)c2nc(-c3c(F)cccc3F)sc2N)c1N1CCC[C@H](N)CC1": [
+        "Pim-2 proto-oncogene, serine/threonine kinase",
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "COCCNC(=O)c1cc(S(N)(=O)=O)c(Cl)cc1SC1CCCCC1": [
+        "Carbonic anhydrase 9",
+        "Carbonic anhydrase 2",
+        "Carbonic anhydrase 5b",
+        "Carbonic anhydrase 4",
+        "Carbonic anhydrase 13",
+        "Carbonic anhydrase 7",
+        "Carbonic anhydrase 6",
+        "Carbonic anhydrase 12",
+        "Carbonic anhydrase 14",
+        "Carbonic anhydrase 5a"
+    ],
+    "O=C1CN(C2CCN(C(=O)Cn3cc(NC(=O)c4cnn5cccnc45)c(-c4cc(Cl)ccc4OC(F)F)n3)CC2)CCN1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "C=CC(=O)N1CC[C@]2(C1)C[C@H](n1c(NC(=O)c3ccc(-c4cnco4)s3)nc3cc(CN[C@@H](C)C(C)(C)C)ccc31)C2": [
+        "Bruton tyrosine kinase",
+        "IL2 inducible T-cell kinase"
+    ],
+    "CCN(Cc1ccccc1)Cc1ccc(-c2cc(S(=O)(=O)CC)ccc2OC)[nH]1": [
+        "Dopamine receptor D2",
+        "Dopamine receptor D3"
+    ],
+    "Cc1ccc(C(=O)Nc2ccc(CN3CCN(C)CC3)c(C(F)(F)F)c2)cc1C#Cc1cnc2cccnn12": [
+        "LCK proto-oncogene, Src family tyrosine kinase",
+        "Fms related tyrosine kinase 3",
+        "RET proto-oncogene"
+    ],
+    "Nc1nn2cccnc2c1C(=O)Nc1cn(CC(=O)N2CCOCC2)nc1-c1cc(Cl)ccc1OC(F)F": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "C=CC(=O)N[C@@H]1Cn2c(c(-c3ccc(Oc4ccccc4)cc3)c3c(N)ncnc32)C1=C": [
+        "Erb-b2 receptor tyrosine kinase 4",
+        "Bruton tyrosine kinase"
+    ],
+    "NS(=O)(=O)c1nnc(NS(=O)(=O)c2ccc(N/C(S)=N/Nc3c(F)c(F)c(F)c(F)c3F)cc2)s1": [
+        "Carbonic anhydrase 2",
+        "Carbonic anhydrase 1"
+    ],
+    "C=CCCCC[N@+]1(C)C2CCC1C[C@H](CC(C#N)(c1ccccc1)c1ccccc1)C2.[Br-]": [
+        "Cholinergic receptor muscarinic 2",
+        "Cholinergic receptor muscarinic 1",
+        "Cholinergic receptor muscarinic 3"
+    ],
+    "CCCCNC(=O)c1cc(S(N)(=O)=O)c(Cl)cc1Cl": [
+        "Carbonic anhydrase 9",
+        "Carbonic anhydrase 2",
+        "Carbonic anhydrase 5b",
+        "Carbonic anhydrase 4",
+        "Carbonic anhydrase 7",
+        "Carbonic anhydrase 6",
+        "Carbonic anhydrase 12",
+        "Carbonic anhydrase 14"
+    ],
+    "CC(C)(C)CC(=O)N1CC[C@]2(C(=O)Nc3ccccc32)[C@H]1c1cccc(-c2ccc(CO)c(S(C)(=O)=O)c2)c1": [
+        "Retinoid X receptor alpha",
+        "Nuclear receptor subfamily 1 group H member 2"
+    ],
+    "O=C(CCc1ccccc1)N[C@@H]1CC[C@@]2(O)[C@H]3Cc4ccc(O)c5c4[C@@]2(CCN3CC2CC2)[C@H]1O5": [
+        "Opioid receptor mu 1",
+        "Opioid receptor kappa 1"
+    ],
+    "N#CCCn1cc(-c2nc(Nc3ccc(NC(=O)CCCCCCC(=O)NO)cc3)nc3[nH]ccc23)cn1": [
+        "Histone deacetylase 6",
+        "Janus kinase 2"
+    ],
+    "O=C1Nc2ccccc2/C1=C/c1c[nH]nc1-c1ccccc1[N+](=O)[O-]": [
+        "Protein kinase C alpha",
+        "Platelet derived growth factor receptor beta",
+        "Ribosomal protein S6 kinase B1"
+    ],
+    "N#CCCN1CCN(C(=O)Cn2cc(NC(=O)c3cnn4cccnc34)c(-c3cc(Cl)ccc3OC(F)F)n2)CC1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "C=C(c1ccc([S@@+]([O-])c2ccc(OC)cc2)cc1)C1CCN(C2CCCCC2)CC1": [
+        "Cholinergic receptor muscarinic 4",
+        "Cholinergic receptor muscarinic 2",
+        "Cholinergic receptor muscarinic 1",
+        "Cholinergic receptor muscarinic 3"
+    ],
+    "COc1ncc(-c2ccc3ncc(-c4nnc(CCN5CCN(C)CC5)o4)n3c2)cc1NS(=O)(=O)c1ccc(F)cc1F": [
+        "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit delta",
+        "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha",
+        "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit beta"
+    ],
+    "Cc1ccc(NC(=O)c2cccc(C(F)(F)F)c2)cc1-c1cc2nccn2c(N2CCOCC2)n1": [
+        "B-raf proto-oncogene, serine/threonine kinase",
+        "Raf-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "CCc1cncc(-c2cc3c(cn2)cnn3-c2ccc(C3CC3)c(N3CCC[C@H](N)C3)n2)c1": [
+        "Pim-2 proto-oncogene, serine/threonine kinase",
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "Cn1cc(-c2cc3c(-c4cccc(N5CCC[C@@H](N)C5)n4)n[nH]c3cn2)cn1": [
+        "Pim-2 proto-oncogene, serine/threonine kinase",
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "C[C@H]1CN(C(=O)c2ccc(NC(=O)c3cc(O[C@H](C)c4c(Cl)ccc(F)c4Cl)c(N)nn3)cc2)C[C@@H](C)N1": [
+        "MET proto-oncogene, receptor tyrosine kinase",
+        "ALK receptor tyrosine kinase"
+    ],
+    "N#CC1CCN(C2CCN(C(=O)Cn3cc(NC(=O)c4cnn5cccnc45)c(-c4cc(Cl)ccc4OC(F)F)n3)CC2)C1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "NS(=O)(=O)c1cc(C(=O)NCCCO)c(NCc2ccccc2)cc1Cl": [
+        "Carbonic anhydrase 9",
+        "Carbonic anhydrase 2",
+        "Carbonic anhydrase 13",
+        "Carbonic anhydrase 7",
+        "Carbonic anhydrase 6",
+        "Carbonic anhydrase 12",
+        "Carbonic anhydrase 14"
+    ],
+    "CC(C)[C@@H]1NC(=O)[C@@H](Cc2c[nH]c3c(-c4c5ccccc5cc5ccccc45)cccc23)NC(=O)[C@H](CC(=O)O)NC(=O)CNC(=O)[C@H](CCCNC(=N)N)NC1=O": [
+        "Integrin alphaV beta8",
+        "Integrin subunit alpha V/beta 3"
+    ],
+    "CN(CC1(CC#N)CC1)C1CCN(C(=O)Cn2cc(NC(=O)c3cnn4cccnc34)c(-c3cc(Cl)ccc3OC(F)F)n2)CC1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "Cn1c(=O)n(C2CCN(C(=O)C(C)(C)O)CC2)c2c3nc(-c4cnc5[nH]ncc5c4)ccc3ncc21": [
+        "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha",
+        "Mechanistic target of rapamycin"
+    ],
+    "CNC(=O)[C@@H](Cc1cccc2ccccc12)NC(=O)[C@@H](CC(=O)NO)CC(C)C": [
+        "Matrix metallopeptidase 8",
+        "Matrix metallopeptidase 2"
+    ],
+    "CO[C@@H]1[C@@H](C)C[C@@H](c2ccncc2NC(=O)c2nc(-c3c(F)cccc3F)sc2N)C[C@H]1N": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "COc1ccc(C(CC(=O)O)Cc2cc(OCCc3ccc4c(n3)NCCC4)n(C)n2)cn1": [
+        "Integrin alphaV beta8",
+        "Integrin subunit alpha V/beta 3"
+    ],
+    "C[C@H]1C[C@@H](c2ccncc2NC(=O)c2ccc(F)c(-c3c(F)cc(OC4CCOCC4)cc3F)n2)C[C@@H](N)[C@H]1OCCC#N": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "N#CCCNC1CCN(C(=O)Cn2cc(NC(=O)c3cnn4cccnc34)c(-c3cc(Cl)ccc3OC(F)F)n2)CC1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "NS(=O)(=O)c1cc(C(=O)NCCCO)c(SC2CCCCC2)cc1Cl": [
+        "Carbonic anhydrase 5b",
+        "Carbonic anhydrase 4",
+        "Carbonic anhydrase 13",
+        "Carbonic anhydrase 7",
+        "Carbonic anhydrase 14"
+    ],
+    "COc1ccnc(C#CCN(c2ccc3ncc(-c4cnn(C)c4)nc3c2)c2c(F)c(OC)cc(OC)c2F)n1": [
+        "Fibroblast growth factor receptor 3",
+        "Fibroblast growth factor receptor 1"
+    ],
+    "CC1=CC[C@@H]2[C@@H](C1)c1c(O)cc(C(C)(C)C3CCCCC3)cc1OC2(C)C": [
+        "Cannabinoid receptor 2",
+        "Cannabinoid receptor 1"
+    ],
+    "Cc1ccc(-n2ncc3cnc(-c4cnn(CC(F)(F)F)c4)cc32)nc1N1CCNC[C@@H](O)C1": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "N#C[C@H]1CCCC[C@@H]1n1cc(C(N)=O)c(Nc2ccc(S(=O)(=O)NCc3ccccc3)cc2)n1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "N[C@H]1CCC[C@@H](Nc2ccc3cccc(-c4cc5c([nH]4)CCNC5=O)c3n2)C1": [
+        "Pim-2 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "NC(=O)c1cccc2c(NCc3ccc(NC(=O)c4cc(C(F)(F)F)n[nH]4)cc3)ncnc12": [
+        "Aurora kinase B",
+        "Aurora kinase A"
+    ],
+    "CCOC(=O)N1CCC(CN2C[C@H]3CN(C(=O)Cn4cc(NC(=O)c5cnn6cccnc56)c(-c5cc(Cl)ccc5OC(F)F)n4)C[C@H]3C2)CC1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "NCCCC[C@@H]1NC(=O)[C@@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@@H]2C[C@@H](O)CN2C(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](Cc2ccc(OCc3ccccc3)cc2)NC1=O": [
+        "Somatostatin receptor 5",
+        "Somatostatin receptor 2"
+    ],
+    "CC1(C)[C@H](Nc2c(C(N)=O)cnn3cc(-c4ccc(Cl)cc4)cc23)CC[C@]1(C)N": [
+        "Janus kinase 3",
+        "Janus kinase 1"
+    ],
+    "OC1CN(c2cncc(-c3cc4c(cn3)cnn4-c3cccc(N4CCNCC4)n3)n2)C1": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "CC(C)(C)N1CCC(c2cc(-c3ccc(F)cc3F)c3ccc(=O)n(-c4c(Cl)cccc4Cl)c3c2)CC1": [
+        "Mitogen-activated protein kinase 14",
+        "Mitogen-activated protein kinase 11"
+    ],
+    "Cn1cc(-c2ccc(Nc3nn(C4(CC#N)CCN(C(=O)OCC(F)(F)F)CC4)cc3C(N)=O)cn2)cn1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "COC(=O)c1ccc(-c2cccc([C@@H]3N(C(=O)OC(C)(C)C)CC[C@@]34C(=O)Nc3ccccc34)c2)cc1S(C)(=O)=O": [
+        "Retinoid X receptor alpha",
+        "Nuclear receptor subfamily 1 group H member 2"
+    ],
+    "CCCCNC(=O)c1cc(S(N)(=O)=O)c(Cl)cc1S(=O)(=O)c1ccccc1": [
+        "Carbonic anhydrase 9",
+        "Carbonic anhydrase 2",
+        "Carbonic anhydrase 5b",
+        "Carbonic anhydrase 4",
+        "Carbonic anhydrase 13",
+        "Carbonic anhydrase 7",
+        "Carbonic anhydrase 12",
+        "Carbonic anhydrase 14"
+    ],
+    "O=C(OC1CN2CCC1CC2)C(O)(c1ccccc1)c1ccccc1": [
+        "Cholinergic receptor muscarinic 2",
+        "Cholinergic receptor muscarinic 1"
+    ],
+    "O=C(Nc1cn(CC(=O)N2CCC(N3CCC(O)CC3=O)CC2)nc1-c1cc(Cl)ccc1OC(F)F)c1cnn2cccnc12": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "O=C(CN1[C@@H]2CC[C@@H]1CC(c1cccc(O)c1)C2)C1CCCCC1": [
+        "Opioid receptor mu 1",
+        "Opioid receptor delta 1"
+    ],
+    "CCN(C(=O)N1CCC(C(=O)c2ccc3cnn(C)c3c2)CC1)c1ccc(C(=O)O)cc1": [
+        "Tankyrase 2",
+        "Tankyrase"
+    ],
+    "O[C@@H]1CNCCN(c2cccc(-n3ncc4cnc(-c5cnn(CC(F)(F)F)c5)cc43)n2)C1": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "CCN1CCN(Cc2ccc(C#C[C@]3(CN4Cc5ccc(OC)cc5C4=O)NC(=O)NC3=O)cc2)CC1": [
+        "ADAM metallopeptidase domain 17",
+        "Tumor necrosis factor"
+    ],
+    "CCO[C@@H](Cc1ccc(OCc2nc(-c3ccc(C)s3)oc2C)cc1)C(=O)O": [
+        "Peroxisome proliferator activated receptor alpha",
+        "Peroxisome proliferator activated receptor gamma"
+    ],
+    "Cn1ncc(NC(=O)c2nc(-c3c(F)cccc3F)sc2N)c1N1CC[C@@](C)(N)CC(F)(F)C1": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "Cc1cc(-c2cc3c(N[C@@H]4CC[C@](C)(N)C4(C)C)c(C(N)=O)cnn3c2)ccn1": [
+        "Janus kinase 3",
+        "Janus kinase 1"
+    ],
+    "CC(C)c1cc(-c2cccc(/C=C(/C(=O)O)c3ccc(S(C)(=O)=O)cc3)c2)c2ncccc2c1": [
+        "Phosphodiesterase 4B",
+        "Phosphodiesterase 4D"
+    ],
+    "Cc1ccc(NC(=O)c2ccnc(C(F)(F)F)c2)cc1-c1cc(N2CCOCC2)c(=O)n(C)c1": [
+        "B-raf proto-oncogene, serine/threonine kinase",
+        "Raf-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "NS(=O)(=O)c1cc(C(=O)NCCCC(=O)O)c(S(=O)(=O)Cc2ccccc2)cc1Cl": [
+        "Carbonic anhydrase 7",
+        "Carbonic anhydrase 12"
+    ],
+    "COC(=O)CN1CCN(C(=O)Cn2cc(NC(=O)c3cnn4cccnc34)c(-c3cc(Cl)ccc3OC(F)F)n2)CC1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "CN1CC[C@@H]2[C@H](CCN2C(=O)Cn2cc(NC(=O)c3cnn4cccnc34)c(-c3cc(Cl)ccc3OC(F)F)n2)C1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "Cc1nc2cccc(-c3cc4c([nH]3)CCNC4=O)c2nc1N[C@H]1C[C@H](N)C1": [
+        "Pim-2 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "COc1ccc(-n2ncc3cnc(-c4cnn(CC(F)(F)F)c4)cc32)nc1N1CCNCC(O)C1": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "O=C1CCc2c(Oc3ccc4c(c3)C3C(O4)C3c3nc(-c4ccccc4)c[nH]3)ccnc2N1": [
+        "B-raf proto-oncogene, serine/threonine kinase",
+        "Raf-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "C[C@]12CC[C@H]3[C@@H](CNC4=C(Cl)C(=O)CC[C@@]43C)[C@@H]1CC[C@@H]2C(=O)Nc1c(C(F)(F)F)cccc1C(F)(F)F": [
+        "Steroid 5 alpha-reductase 1",
+        "Steroid 5 alpha-reductase 2"
+    ],
+    "C=CC[C@H](NC(=O)[C@H](Cc1ccccc1)NS(=O)(=O)N1CCOCC1)C(=O)N[C@@H](CC1CCCCC1)C(=O)C(F)(F)C(=O)NC[C@@H](C)CC": [
+        "Renin",
+        "Cathepsin D"
+    ],
+    "Cc1cncc(-c2cc3c(cn2)cnn3-c2cccc(N3CC[C@H](N)C3)n2)n1": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "C[N+]1(C)CCC[C@@H]1[C@@H]1CS[C@@](c2ccccc2)(C2CCCCC2)O1.[I-]": [
+        "Cholinergic receptor muscarinic 5",
+        "Cholinergic receptor muscarinic 2",
+        "Cholinergic receptor muscarinic 1",
+        "Cholinergic receptor muscarinic 3",
+        "Cholinergic receptor muscarinic 4"
+    ],
+    "NC(=O)CCCN1CCC(n2cc(NC(=O)c3c(N)nn4cccnc34)c(-c3cc(Cl)ccc3OC(F)F)n2)CC1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "Oc1cccc(CNc2ccc3c(c2)[C@@]24CCCC[C@H]2[C@@H](C3)N(CC2CC2)CC4)c1": [
+        "Opioid receptor mu 1",
+        "Opioid receptor kappa 1"
+    ],
+    "CCN(C(=O)N1CCC(C(=O)c2ccc3c(c2)cc(C(=O)O)n3C)CC1)c1ccc(OC)cc1": [
+        "Tankyrase 2",
+        "Tankyrase"
+    ],
+    "C[C@H]1NC(=O)[C@H](Cc2c[nH]cn2)NC(=O)CCC(=O)NCCCC[C@H](C(N)=O)NC(=O)[C@@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](CCCN=C(N)N)NC1=O": [
+        "Melanocortin 5 receptor",
+        "Melanocortin 3 receptor",
+        "Melanocortin 4 receptor"
+    ],
+    "O=C(CCCCCCCCC(=O)Oc1ccc2c3c1O[C@H]1C(=O)CC[C@@]4(O)[C@@H](C2)N(CC2CC2)CC[C@]314)Oc1ccc2c(c1)[C@@]13CCCCC1[C@@H](C2)N(CC1CCC1)CC3": [
+        "Opioid receptor mu 1",
+        "Opioid receptor kappa 1"
+    ],
+    "O=C(Nc1cn(CC(=O)N2C[C@@H]3CN(CCCN4CCOCC4)C[C@@H]3C2)nc1-c1cc(Cl)ccc1OC(F)F)c1cnn2cccnc12": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "Cc1ccc2c(N3CCN(CCc4cc5c(cc4F)OCC(=O)N5)CC3)cccc2n1": [
+        "5-hydroxytryptamine receptor 1A",
+        "Solute carrier family 6 member 4",
+        "5-hydroxytryptamine receptor 1D"
+    ],
+    "CN(C1CCN(C(=O)Cn2cc(NC(=O)c3cnn4cccnc34)c(-c3cc(Cl)ccc3OC(F)F)n2)CC1)[C@H]1CCOC1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "Cc1nc2cccc(-c3cc4c([nH]3)[C@@H](C)NC4=O)c2nc1N[C@H]1CCC[C@@H](NC(=O)[C@H](N)CO)C1": [
+        "Pim-2 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "CNc1nc(-c2cc(NC(=O)c3cccc(C(F)(F)F)c3)ccc2C)cc(N2CCOCC2)n1": [
+        "B-raf proto-oncogene, serine/threonine kinase",
+        "Raf-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "O=C(O)CC(Cc1nc(CCCc2ccc3c(n2)NCCC3)no1)c1ccc2ncoc2c1": [
+        "Integrin alphaV beta8",
+        "Integrin subunit alpha V/beta 3"
+    ],
+    "CO/N=C(\\CN(C)C(=O)c1cc(Cl)cc(Cl)c1)[C@H](CCN1CCC(N2CCCN(CC(N)=O)C2=O)CC1)c1ccc(Cl)c(Cl)c1": [
+        "Tachykinin receptor 1",
+        "Tachykinin receptor 3",
+        "Tachykinin receptor 2"
+    ],
+    "COCC[C@H]1[C@]2(C)CNC[C@]12c1ccc(Cl)c(Cl)c1": [
+        "Solute carrier family 6 member 4",
+        "Solute carrier family 6 member 2"
+    ],
+    "CN1CCN(c2nccc3cc4c(cc23)N(C(=O)c2ccc(C#N)cc2)CC4)CC1": [
+        "5-hydroxytryptamine receptor 1B",
+        "5-hydroxytryptamine receptor 1D"
+    ],
+    "Oc1ccc([C@H]2Oc3cccc(O)c3[C@H]3CCC[C@H]32)cc1": [
+        "Estrogen receptor 1",
+        "Estrogen receptor 2"
+    ],
+    "CCN(Cc1cccnc1)C(=O)Cn1cc(NC(=O)c2cnn3cccnc23)c(-c2cc(Cl)ccc2OC(F)F)n1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "C[C@@]1(O)CCC[C@H]1n1c(=O)c(CC#N)cc2cnc(NC3CCN(S(C)(=O)=O)CC3)nc21": [
+        "Cyclin dependent kinase 2/cyclin E1",
+        "Cyclin dependent kinase 2",
+        "Cyclin dependent kinase 4/cyclin D"
+    ],
+    "Cc1cc(O)cc(C)c1C[C@H](N)C(=O)N1Cc2ccccc2C[C@H]1C(=O)NCC(=O)NCc1ccccc1": [
+        "Opioid receptor mu 1",
+        "Opioid receptor delta 1"
+    ],
+    "O=C(Nc1c[nH]c2ncccc12)c1cnn2ccc(NC[C@H]3CCNC[C@@H]3F)nc12": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "Cl.Oc1ccc2c3c(ccc2c1)-c1cc(F)cc(F)c1O[C@@H]3c1ccc(OCCN2CCCCC2)cc1": [
+        "Estrogen receptor 1",
+        "Estrogen receptor 2"
+    ],
+    "CC(C)C[C@H](CC(=O)NO)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)NCc1ccco1": [
+        "Matrix metallopeptidase 8",
+        "Matrix metallopeptidase 2"
+    ],
+    "O=C(NCCCCN1CCN(c2cccc3ccccc23)CC1)c1ccccc1": [
+        "5-hydroxytryptamine receptor 1A",
+        "Dopamine receptor D3"
+    ],
+    "Cl.Clc1ccc([C@]23CNC[C@H]2[C@@H]3COC2CCC2)cc1Cl": [
+        "Solute carrier family 6 member 4",
+        "Solute carrier family 6 member 2"
+    ],
+    "NNC(=O)C1CC(=O)N(c2ccc(S(N)(=O)=O)cc2)C1": [
+        "Carbonic anhydrase 9",
+        "Carbonic anhydrase 2",
+        "Carbonic anhydrase 4",
+        "Carbonic anhydrase 7",
+        "Carbonic anhydrase 6",
+        "Carbonic anhydrase 12",
+        "Carbonic anhydrase 14"
+    ],
+    "CC[C@H]1[C@@H]2c3ccccc3C[C@]12c1c[nH]cn1": [
+        "Adrenoceptor alpha 2A",
+        "Adrenoceptor alpha 2B",
+        "Adrenoceptor alpha 2C"
+    ],
+    "CC(C)CNCCn1cc(-c2ccc(F)c(C(F)(F)F)c2)nc1C1CCN(c2ncnc(N)c2C#N)CC1": [
+        "AKT serine/threonine kinase 1",
+        "Ribosomal protein S6 kinase B1"
+    ],
+    "CC(C)n1ncnc1-c1nc2c(s1)CCOc1cc(-c3cnn(CCO)c3)ccc1-2": [
+        "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit delta",
+        "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha",
+        "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit gamma"
+    ],
+    "CN1CCC2CN(C(=O)Cn3cc(NC(=O)c4c(N)nn5cccnc45)c(-c4cc(Cl)ccc4OC(F)F)n3)CCC21": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "CC[C@H]1CN(c2ncc(C#N)s2)C[C@H]1Nc1c(C(N)=O)cnn2cc(-c3cnn(CC(C)C)c3)cc12": [
+        "Janus kinase 3",
+        "Janus kinase 1"
+    ],
+    "CNS(=O)(=O)N1CC[C@](C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1": [
+        "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit delta",
+        "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha"
+    ],
+    "CCCCNC(=O)c1cc(S(N)(=O)=O)c(Cl)cc1S(=O)(=O)C1CCCCC1": [
+        "Carbonic anhydrase 9",
+        "Carbonic anhydrase 2",
+        "Carbonic anhydrase 5b",
+        "Carbonic anhydrase 4",
+        "Carbonic anhydrase 13",
+        "Carbonic anhydrase 7",
+        "Carbonic anhydrase 12",
+        "Carbonic anhydrase 14"
+    ],
+    "CN(CC1=CC(=O)OC1)C1CCN(C(=O)Cn2cc(NC(=O)c3cnn4cccnc34)c(-c3cc(Cl)ccc3OC(F)F)n2)CC1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "CCc1nc(C(N)=O)c(Nc2ccc(N3CCC(N4CCN(C)CC4)CC3)c(OC)c2)nc1NC1CCOCC1": [
+        "Fms related tyrosine kinase 3",
+        "AXL receptor tyrosine kinase"
+    ],
+    "O=C(O)C[C@H](NC(=O)[C@@H]1CC(=O)N(c2cccc(NC3=NCCCN3)c2)C1)c1ccc2c(c1)OCO2": [
+        "Integrin alphaV beta8",
+        "Integrin subunit alpha V/beta 3"
+    ],
+    "CCOP(=O)(c1ccc(Oc2ccccc2)cc1)N1Cc2ccccc2CC1C(=O)NO": [
+        "Matrix metallopeptidase 3",
+        "Matrix metallopeptidase 9"
+    ],
+    "CNc1cccc(-n2ncc3cnc(-c4cncc(C)n4)cc32)n1": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "CCn1cc(-c2cc3c(cn2)cnn3-c2cccc(N3CCC[C@H](N)C3)n2)cn1": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "COc1ccc2c3c1O[C@H]1C(=O)CC[C@@]4(NC(=O)/C=C/c5ccccc5Cl)[C@@H](C2)N(C)CC[C@]314": [
+        "Opioid receptor mu 1",
+        "Opioid receptor delta 1"
+    ],
+    "O=C(Nc1cn(CC(=O)N2C[C@@H]3CN(CC4CCC(F)(F)CC4)C[C@@H]3C2)nc1-c1cc(Cl)ccc1OC(F)F)c1cnn2cccnc12": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "N#CCCNC1CCC(=CCn2cc(NC(=O)c3cnn4cccnc34)c(-c3cc(Cl)ccc3OC(F)F)n2)CC1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "COc1ccc(S(=O)(=O)N2CCSC(C)(C)C2C(=O)NO)cc1": [
+        "Matrix metallopeptidase 1",
+        "Matrix metallopeptidase 3",
+        "Matrix metallopeptidase 9",
+        "Matrix metallopeptidase 8"
+    ],
+    "CC(C)[C@@H]1NC(=O)[C@@H](Cc2c[nH]c3c(F)cccc23)NC(=O)[C@H](CC(=O)O)NC(=O)CNC(=O)[C@H](CCCNC(=N)N)NC1=O": [
+        "Integrin alphaV beta8",
+        "Integrin subunit alpha V/beta 3"
+    ],
+    "OC1CNCCN(c2cccc(-n3ncc4cnc(-c5cncc(C6CC6)c5)cc43)n2)C1": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "Cc1cc(O)cc(C)c1C[C@H](N)C(=O)N1Cc2ccccc2C[C@@H]1C(=O)NCC(=O)Nc1ccccc1": [
+        "Opioid receptor mu 1",
+        "Opioid receptor delta 1"
+    ],
+    "CC[C@H]1CN(S(C)(=O)=O)C[C@H]1Nc1c(C(N)=O)cnn2cc(-c3cnn(CC(C)C)c3)cc12": [
+        "Janus kinase 3",
+        "Janus kinase 1"
+    ],
+    "CN1CC[C@]23c4c5ccc(OC(=O)CCCCCCCCC(=O)Oc6ccc7c(c6)[C@@]68CCCCC6[C@@H](C7)N(CC6CCC6)CC8)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5": [
+        "Opioid receptor mu 1",
+        "Opioid receptor kappa 1"
+    ],
+    "Cc1cc(C)c(S(=O)(=O)N[C@@H](CNC(=O)c2cccc3c2cnn3CCCNc2ncc[nH]2)C(=O)O)c(C)c1": [
+        "Integrin alphaV beta8",
+        "Integrin subunit alpha V/beta 3"
+    ],
+    "CN1CCc2ccccc2Cc2[nH]c3ccc(O)cc3c2CC1": [
+        "Dopamine receptor D1",
+        "Dopamine receptor D5"
+    ],
+    "Cc1nc2cccc(-c3cc4c([nH]3)CCNC4=O)c2nc1N[C@@H]1CCC[C@H](N)C1": [
+        "Pim-2 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "Cc1ccc2c(N3CCN(CCc4cccc(NS(C)(=O)=O)c4)CC3)cccc2n1": [
+        "5-hydroxytryptamine receptor 1A",
+        "5-hydroxytryptamine receptor 1B",
+        "5-hydroxytryptamine receptor 1D"
+    ],
+    "Cc1cncc(-c2cc3c(cn2)cnn3-c2ccc(C(F)F)c(N3CCC[C@H](N)C3)n2)n1": [
+        "Pim-2 proto-oncogene, serine/threonine kinase",
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "NC[C@@H](C(=O)Nc1ccc2cnccc2c1)c1ccc(CO)cc1": [
+        "Rho associated coiled-coil containing protein kinase 2",
+        "Rho associated coiled-coil containing protein kinase 1"
+    ],
+    "NC(N)=NS(=O)(=O)c1ccc(N/N=C2\\SC(Nc3ccc(S(N)(=O)=O)cc3)=NC2=O)cc1": [
+        "Carbonic anhydrase 2",
+        "Carbonic anhydrase 1"
+    ],
+    "C=CCN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@H](NC(=O)c2cccc([125I])c2)CC[C@@]3(O)[C@H]1C5": [
+        "Opioid receptor mu 1",
+        "Opioid receptor kappa 1"
+    ],
+    "NCCNc1cccc(-c2n[nH]c3cnc(-c4cccnc4)cc23)n1": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "COc1ccc([S+]([O-])c2ccc(C(C)C3CCN(C4CCCCC4)CC3)cc2)cc1": [
+        "Cholinergic receptor muscarinic 4",
+        "Cholinergic receptor muscarinic 2",
+        "Cholinergic receptor muscarinic 1",
+        "Cholinergic receptor muscarinic 3"
+    ],
+    "NS(=O)(=O)c1cc(C(=O)NCCO)c(SCc2ccccc2)cc1Br": [
+        "Carbonic anhydrase 9",
+        "Carbonic anhydrase 2",
+        "Carbonic anhydrase 5b",
+        "Carbonic anhydrase 4",
+        "Carbonic anhydrase 13",
+        "Carbonic anhydrase 7",
+        "Carbonic anhydrase 12",
+        "Carbonic anhydrase 14"
+    ],
+    "COC(=O)N[C@H]1[C@@H](C)CN(c2ccncc2NC(=O)c2nc(-c3c(F)cccc3F)sc2N)C[C@H]1N": [
+        "Pim-2 proto-oncogene, serine/threonine kinase",
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "O=C(Nc1c[nH]c2ncccc12)c1cnn2ccc(NC[C@@H]3CCNC[C@H]3F)nc12": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "N=C1N[C@@]23[C@H]([C@H]4NC(=N)N2C[C@](OS(=O)(=O)O)(C[C@H]2[C@@H](CO)CON2C4=O)C3(O)O)N1COC(=O)NO": [
+        "Sodium voltage-gated channel alpha subunit 4",
+        "Sodium voltage-gated channel alpha subunit 5",
+        "Sodium voltage-gated channel alpha subunit 2"
+    ],
+    "O=C(O)C[C@H](CCCCCCc1ccc2c(n1)NCCC2)c1cncnc1": [
+        "Integrin alphaV beta8",
+        "Integrin subunit alpha V/beta 3"
+    ],
+    "COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OCCCCOc1ccc(-c2nnn[nH]2)cc1": [
+        "Phosphodiesterase 4B",
+        "Phosphodiesterase 4D"
+    ],
+    "Nc1cc(NC2=NCC(O)CN2)cc(C(=O)NCC(=O)N[C@H](CC(=O)O)c2cc(Cl)cc(I)c2O)c1": [
+        "Integrin alphaV beta8",
+        "Integrin subunit alpha V/beta 3"
+    ],
+    "COC[C@@H](NC(=O)c1cc(F)c(N(C)[C@@H]2CCN(c3ncnc4[nH]ccc34)C2)c(F)c1)c1ccccc1": [
+        "Janus kinase 3",
+        "Janus kinase 2"
+    ],
+    "C[C@]12CCC3C(CNC4=C(Cl)C(=O)CC[C@@]43C)C1CC[C@@H]2C(=O)N(c1ccc(Cl)cc1)C1CCCC1": [
+        "Steroid 5 alpha-reductase 1",
+        "Steroid 5 alpha-reductase 2"
+    ],
+    "CN[C@@H]1C[C@H]2O[C@@](C)([C@@H]1OC)n1c3ccccc3c3c4c(c5c6ccccc6n2c5c31)C(=O)NC4": [
+        "Fms related tyrosine kinase 3",
+        "P21 (RAC1) activated kinase 1",
+        "Janus kinase 1",
+        "Protein kinase C alpha",
+        "Src proto-oncogene, non-receptor tyrosine kinase",
+        "Pyruvate dehydrogenase kinase 1",
+        "Epidermal growth factor receptor",
+        "TANK binding kinase 1",
+        "Aurora kinase A",
+        "Checkpoint kinase 1",
+        "Tyrosine kinase 2",
+        "Ribosomal protein S6 kinase A3",
+        "Neurotrophic receptor tyrosine kinase 3",
+        "Kit proto-oncogene receptor tyrosine kinase",
+        "Spleen associated tyrosine kinase",
+        "Neurotrophic receptor tyrosine kinase 2",
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Leucine rich repeat kinase 2",
+        "Platelet derived growth factor receptor beta",
+        "Mitogen-activated protein kinase kinase kinase 5",
+        "Glucokinase",
+        "Ribosomal protein S6 kinase B1"
+    ],
+    "O=C1NC(=O)C2(CCC(=O)N2c2ccc(Oc3ccc(Cl)cc3)cc2)C(=O)N1": [
+        "Matrix metallopeptidase 9",
+        "Matrix metallopeptidase 13",
+        "Matrix metallopeptidase 2"
+    ],
+    "COc1cc2nc(N3CCN(C(=O)COc4c(OC)cccc4C(C)C)[C@H]4CCCC[C@H]43)nc(N)c2cc1OC": [
+        "Adrenoceptor alpha 1B",
+        "Adrenoceptor alpha 1A"
+    ],
+    "O=C(NNC(=S)Nc1ccc(Cl)c(Cl)c1)c1ccccc1O": [
+        "Coagulation factor II, thrombin",
+        "5-hydroxytryptamine receptor 1A",
+        "Angiotensin I converting enzyme",
+        "Cannabinoid receptor 1"
+    ],
+    "Cc1cncc(-c2cc3c(cn2)cnn3-c2cccc(N3CC[C@@H](N)C3)n2)n1": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "CC(C)n1ncnc1-c1nc2c(s1)CCOc1cc(C3CNC3)ccc1-2": [
+        "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit delta",
+        "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha"
+    ],
+    "Cc1ccc2c(c1)nc(SCC(=O)N1CCC[C@H]1C(=O)Nc1ccccc1-n1cccc1)n2C": [
+        "Hypocretin receptor 1",
+        "Hypocretin receptor 2"
+    ],
+    "Cc1nc(-c2cn3c(n2)-c2ccc(-c4cnn(C(C)(C)C(N)=O)c4)cc2OCC3)n(C(C)C)n1": [
+        "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit delta",
+        "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha",
+        "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit gamma"
+    ],
+    "COc1ncc(-c2cc(OCC3(C)COC3)c3ncnc(C)c3c2)cc1NS(=O)(=O)c1ccc(F)cc1F": [
+        "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha",
+        "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit beta"
+    ],
+    "O=C(O)CNC1CCN(C(=O)Cn2cc(NC(=O)c3cnn4cccnc34)c(-c3cc(Cl)ccc3OC(F)F)n2)CC1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "NC(=O)c1cc(S(N)(=O)=O)c(Cl)cc1Sc1ccccc1": [
+        "Carbonic anhydrase 9",
+        "Carbonic anhydrase 2",
+        "Carbonic anhydrase 5b",
+        "Carbonic anhydrase 4",
+        "Carbonic anhydrase 13",
+        "Carbonic anhydrase 7",
+        "Carbonic anhydrase 12",
+        "Carbonic anhydrase 14"
+    ],
+    "CC(C)NC(=O)/C(=C\\c1cccc(-c2cc(C(C)(C)C#N)cc3cccnc23)c1)c1ccc(S(C)(=O)=O)cc1": [
+        "Phosphodiesterase 4B",
+        "Phosphodiesterase 4D"
+    ],
+    "COc1ccc2c(c1CN1CCNCC1)O/C(=C\\c1c[nH]c3nc(Cl)ccc13)C2=O": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "CN(C[C@@H](CCN1CCC(c2ccccc2[S@+](C)[O-])CC1)c1ccc(Cl)c(Cl)c1)C(=O)c1cc(C#N)cc2ccccc12": [
+        "Tachykinin receptor 1",
+        "Tachykinin receptor 2"
+    ],
+    "CC(=O)N(CCCCNc1c2c(nc3ccccc13)CCCC2)CCCNc1c2c(nc3ccccc13)CCCC2": [
+        "Butyrylcholinesterase",
+        "Acetylcholinesterase (cartwright blood group)"
+    ],
+    "CN(C1NC(C#N)=CS1)[C@@H]1CCN(c2ncnc3[nH]ccc23)C1": [
+        "Janus kinase 3",
+        "Janus kinase 2"
+    ],
+    "O=C(NO)[C@H]1[C@@H](O)[C@H](O)[C@@H](O)CN1S(=O)(=O)c1ccc(Oc2ccccc2)cc1": [
+        "Matrix metallopeptidase 3",
+        "Matrix metallopeptidase 9"
+    ],
+    "NS(=O)(=O)c1cc(C(=O)NCCCO)c(S(=O)(=O)C2CCCCC2)cc1Cl": [
+        "Carbonic anhydrase 9",
+        "Carbonic anhydrase 2",
+        "Carbonic anhydrase 5b",
+        "Carbonic anhydrase 7",
+        "Carbonic anhydrase 12",
+        "Carbonic anhydrase 14"
+    ],
+    "N#Cc1ccc(N2C3CCC2CN(C(=O)CCS(=O)(=O)c2cccc4ncsc24)C3)nc1": [
+        "Cholinergic receptor muscarinic 1",
+        "Cholinergic receptor muscarinic 3"
+    ],
+    "O=C(O)C[C@H](Cc1nc(CCCc2ccc3c(n2)NCCC3)no1)c1ccc2c(c1)OCO2": [
+        "Integrin alphaV beta8",
+        "Integrin subunit alpha V/beta 3"
+    ],
+    "COc1cc(F)c(-c2nc(C(=O)Nc3cnccc3N3C[C@H](C)[C@H](n4ccnn4)[C@H](N)C3)ccc2F)c(F)c1": [
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "C[N+]1(C)CCC[C@H]1[C@H]1CS[C@@](c2ccccc2)(C2CCCCC2)O1.[I-]": [
+        "Cholinergic receptor muscarinic 5",
+        "Cholinergic receptor muscarinic 2",
+        "Cholinergic receptor muscarinic 1",
+        "Cholinergic receptor muscarinic 3",
+        "Cholinergic receptor muscarinic 4"
+    ],
+    "O=C(CCCCCCCCC(=O)Oc1ccc2c(c1)[C@@]13CCCC[C@H]1[C@@H](C2)N(CC1CCC1)CC3)Oc1ccc2c(c1)[C@@]13CCCC[C@@]1(O)[C@@H](C2)N(CC1CCC1)CC3": [
+        "Opioid receptor mu 1",
+        "Opioid receptor kappa 1"
+    ],
+    "CC(=O)Nc1cccc(CCN2CCN(c3cccc4nc(C)ccc34)CC2)c1": [
+        "5-hydroxytryptamine receptor 1B",
+        "5-hydroxytryptamine receptor 1D"
+    ],
+    "O=C(NO)[C@@H]1CS(=O)(=O)CN1S(=O)(=O)c1ccc(Oc2ccc(Cl)cc2)cc1": [
+        "Matrix metallopeptidase 9",
+        "Matrix metallopeptidase 2"
+    ],
+    "CCc1nc(C(N)=O)c(Nc2ccc(N3CCC(N4CCN(C)CC4)CC3)cc2)nc1N[C@H]1CC[C@H](O)CC1": [
+        "Fms related tyrosine kinase 3",
+        "RET proto-oncogene"
+    ],
+    "COCCNC(=O)c1cc(S(N)(=O)=O)c(Cl)cc1Cl": [
+        "Carbonic anhydrase 9",
+        "Carbonic anhydrase 2",
+        "Carbonic anhydrase 4",
+        "Carbonic anhydrase 7",
+        "Carbonic anhydrase 6",
+        "Carbonic anhydrase 14"
+    ],
+    "CN(c1cncc(-n2ccnc2)n1)[C@@H]1CCN(c2ncnc3[nH]ccc23)C1": [
+        "Janus kinase 3",
+        "Janus kinase 2"
+    ],
+    "C[C@]12C=CC(=O)NC1CCC1C2CC[C@@]2(C)C1CC[C@@H]2C(=O)Nc1c(Cl)cccc1C(F)(F)F": [
+        "Steroid 5 alpha-reductase 1",
+        "Steroid 5 alpha-reductase 2"
+    ],
+    "CC(C)[C@H](NS(=O)(=O)c1ccc(-c2cccc(CNC(=O)c3nc4ccccc4c(=O)[nH]3)c2)cc1)C(=O)NO": [
+        "Matrix metallopeptidase 10",
+        "Matrix metallopeptidase 8",
+        "Matrix metallopeptidase 13"
+    ],
+    "Cc1cc(O)cc(C)c1C[C@H](N)C(=O)N[C@@H](C)C(=O)NCC(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](CC(C)C)C(N)=O": [
+        "Opioid receptor mu 1",
+        "Opioid receptor delta 1"
+    ],
+    "Nc1nn2cccnc2c1C(=O)Nc1cn(CC(=O)N2CC[C@@H](O)C2)nc1-c1cc(Cl)ccc1OC(F)F": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "CN(Cc1nc2c(N3CCOCC3)nc(-c3ccncc3)nc2n1C)c1ncc(C(=O)NO)cn1": [
+        "Histone deacetylase 1",
+        "Histone deacetylase 10"
+    ],
+    "CCc1cncc(-c2cc3c(cn2)cnn3-c2cccc(N3CCC[C@H](N)C3)n2)n1": [
+        "Pim-2 proto-oncogene, serine/threonine kinase",
+        "Pim-3 proto-oncogene, serine/threonine kinase",
+        "Pim-1 proto-oncogene, serine/threonine kinase"
+    ],
+    "Cc1cc2nc(C(C)C)[nH]c2cc1-c1ccc(C[C@H](NC(=O)[C@H]2CC[C@H](CN)CC2)C(=O)Nc2ccc(-c3nnc(C(F)(F)C(F)(F)C(=O)O)[nH]3)cc2)cc1": [
+        "Plasminogen",
+        "Coagulation factor XI"
+    ],
+    "O=C(O)C[C@@H]1Cc2ccc(OCCCNc3ccccn3)cc2CN(CC(F)(F)F)C1=O": [
+        "Integrin alphaV beta8",
+        "Integrin subunit alpha V/beta 3"
+    ],
+    "Oc1ccc2c3c1O[C@H]1CCC[C@@]4(O)[C@@H](C2)N(CC2CC2)CC[C@]314": [
+        "Opioid receptor mu 1",
+        "Opioid receptor kappa 1"
+    ],
+    "O=C(NCC(F)(F)F)c1cn(-c2cccc(-c3ccc(C4CC4C(=O)O)cc3)c2)c2ncccc2c1=O": [
+        "Phosphodiesterase 4A",
+        "Phosphodiesterase 4B",
+        "Phosphodiesterase 4D"
+    ],
+    "O=C(Nc1cn(CC(=O)N2C[C@@H]3CN(CC4CCN(C(=O)C5CCOCC5)CC4)C[C@@H]3C2)nc1-c1cc(Cl)ccc1OC(F)F)c1cnn2cccnc12": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "O=C(Cn1cc(NC(=O)c2cnn3cccnc23)c(-c2cc(Cl)ccc2OC(F)F)n1)NCC1(CO)CC1": [
+        "Janus kinase 1",
+        "Janus kinase 2"
+    ],
+    "CC[C@H]1CN(c2ncc(C#N)s2)C[C@H]1Nc1c(C(N)=O)cnn2cc(-c3cnn(C)c3)cc12": [
+        "Janus kinase 3",
+        "Janus kinase 1"
+    ],
+    "CC(C)[C@H](C(=O)NO)N(Cc1cn(CCOCCOCCOCCOc2cccnc2F)nn1)S(=O)(=O)c1ccc(OCCF)cc1": [
+        "Matrix metallopeptidase 8",
+        "Matrix metallopeptidase 9",
+        "Matrix metallopeptidase 13",
+        "Matrix metallopeptidase 2"
+    ]
+}
